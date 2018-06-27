@@ -1,2 +1,7 @@
 @import 'normalize.css';
+@import './modules/_mixins.css';
+@import './modules/_features.css';
 @import './modules/_all.css';
+@import './modules/_gallery.css';
+@import './modules/_main-nav.css';
+

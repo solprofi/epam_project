@@ -7,6 +7,7 @@
   <title>Newsic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="./temp/styles/styles.css" />
   <script src="main.js"></script>
 </head>
@@ -15,25 +16,45 @@
   <header>
       <nav class="main-nav">
           <ul class="main-list">
-              <li class="main-list__button main-list__button_no-pb">
-                  <a class="main-list__link" href="index.html">
-                      <img class="main-list__logo" src="temp/styles/images/logo.png" alt="">
+              <li class="main-list__button">
+                  <a class="main-list__link" href="">
+                      <img class="main-list__logo" src="./assets/images/Logo.png" alt="">
                   </a>
               </li>
-              <li class="main-list__button"><a class="main-list__link" href="price.html" >Прайс-Лист</a></li>
-              <li class="main-list__button main-list__button_underlined">
-                  <a class="main-list__link" href="shop.html">Магазин</a>
+              <li class="main-list__button">
+                <a class="main-list__link" href="#/">feature of the day</a>
+                <ul class="dropmenu">
+                  <li class="dropmenu-item">text</li>
+                  <li class="dropmenu-item">text</li>
+                  <li class="dropmenu-item">text</li>
+                </ul>
               </li>
-              <li class="main-list__button"><a class="main-list__link" href="#/">Новости</a></li>
-              <li class="main-list__button"><a class="main-list__link" href="#/">Контакты</a></li>
-              <li class="main-list__button"><a class="main-list__link" href="#/">Записаться</a></li>
-              <li class="main-list__button main-list__button_right-align">
-                  <a class="main-list__link" href="#/"><i class="fas fa-sign-out-alt"></i> Вход</a>
+              <li class="main-list__button">
+                <a class="main-list__link" href="#/">Subscriptions</a>
+                <ul class="dropmenu">
+                    <li class="dropmenu-item">text</li>
+                    <li class="dropmenu-item">text</li>
+                    <li class="dropmenu-item">text</li>
+                  </ul>
+              </li>
+              <li class="main-list__button">
+                <a class="main-list__link" href="#/">News</a>
+                <ul class="dropmenu">
+                    <li class="dropmenu-item">text</li>
+                    <li class="dropmenu-item">text</li>
+                    <li class="dropmenu-item">text</li>
+                  </ul>
+              </li>
+
+              <li class="main-list__button">
+                <a class="main-list__link" href="#/">Contacts</a>
+              </li>
+
+              <li class="main-list__button">
+                <a class="main-list__link" href="#/">Log in</a>
               </li>
           </ul>
       </nav>
-
-
 
     <div id="wrapper" class="skewed">
       <div class="layer bottom">
@@ -93,6 +114,108 @@
       <div class="handle"></div>
     </div>
   </header>
+
+
+  <section class="features-section">
+      <h2 class="section-heading">Music listening. Reinvented.</h2>
+      <h3 class="features-section__subheading">
+        Innovate music library. Pay only for the music that you like. <br>
+        You get 3 free plays of 
+        song. If you do not like it - you do not pay for it.
+      </h3>
+      <div class="feature-container">
+        <div class="feature">
+            <i class="feature__icon fas fa-credit-card"></i>
+            <h2 class="feature__heading">Affordable</h2>
+            <p class="feature__description">Pay only if you like it</p>
+        </div>
+        <div class="feature">
+            <i class="feature__icon fas fa-plane"></i>
+            <h2 class="feature__heading">Everywhere</h2>
+            <p class="feature__description">Lister even if you're offline</p>
+        </div>
+        <div class="feature">
+            <i class="feature__icon fas fa-music"></i>
+            <h2 class="feature__heading">Everything</h2>
+            <p class="feature__description">Your favorite artist? We have him.</p>
+        </div>
+        <div class="feature">
+            <i class="feature__icon far fa-clock"></i>
+            <h2 class="feature__heading">Anytime</h2>
+            <p class="feature__description">НАШИ МАСТЕРА —СТАТУС?</p>
+        </div>
+      </div>
+  </section>
+
+  <section class="gallery-section">
+    <h2 class="section-heading">Our top picks</h2>
+    <div class="gallery">
+        <div class="image-container">
+            <img class="gallery__image" src="./assets/images/1.jpg" alt="">
+            <div class="image-container__text">
+              <h4>Listen now to: Kids See Ghosts</h4>
+              <h4>By: Kids See Ghosts</h4>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="gallery__image" src="./assets/images/2.jpg" alt="">
+            <div class="image-container__text">
+                <h4>Listen now to: Coloring Book</h4>
+                <h4>By: Chance The Rapper</h4>
+            </div>
+        </div>
+        <div class="image-container">
+          <img class="gallery__image" src="./assets/images/3.jpg" alt="">
+          <div class="image-container__text">
+              <h4>Listen now to: wolf</h4>
+              <h4>By: Tyler The Creator</h4>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="gallery__image" src="./assets/images/4.jpeg" alt="">
+          <div class="image-container__text">
+              <h4>Listen now to: Flower boy</h4>
+              <h4>By: Tyler The Creator</h4>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="gallery__image" src="./assets/images/5.jpeg" alt="">
+          <div class="image-container__text">
+              <h4>Listen now to: Abbey Road</h4>
+              <h4>By: The Beatles</h4>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="gallery__image" src="./assets/images/6.jpeg" alt="">
+          <div class="image-container__text">
+              <h4>Listen now to: Nevermind</h4>
+              <h4>By: Nirvana</h4>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="gallery__image" src="./assets/images/7.jpeg" alt="">
+          <div class="image-container__text">
+              <h4>Listen now to: Damn</h4>
+              <h4>By: Kendrick Lamar</h4>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="gallery__image" src="./assets/images/8.jpeg" alt="">
+          <div class="image-container__text">
+              <h4>Listen now to: Sgt. Pepper's Lonely Hearts Club Band</h4>
+              <h4>By: The Beatles</h4>
+              
+          </div>
+     </div>
+
+  </section>
+
+  <section class="review-section">
+      <h2 class="section-heading">Join the thousands who are already here</h2>
+  </section>
+
+
+
 </body>
 
 </html>

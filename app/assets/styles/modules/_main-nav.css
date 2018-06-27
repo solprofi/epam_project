@@ -1,0 +1,60 @@
+/* TOP NAVIGATION */
+.main-nav {
+    background: #eee;
+}
+
+.main-list {
+    margin: 0;
+    padding: 0 0 10px 0;
+    display: flex;
+    list-style: none;
+   
+    &__logo {
+       max-width: 45px;
+       margin-top: 10px;
+    }
+
+    &__button {
+      flex: 1;
+      margin-top: 20px;
+      border-bottom: 2px solid transparent;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    &__button:nth-child(1) {
+        margin-top: 0;
+    }
+
+    &__button:nth-child(1):hover {
+        border-bottom: 2px solid transparent;
+    }
+
+    &__button:hover {
+        border-bottom: 2px solid  #eb7f00;
+    }
+
+
+    &__link {
+       text-decoration: none;
+       text-transform: uppercase;
+       color: black;
+    }
+
+}
+
+
+.dropmenu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.dropmenu-item {
+    display: none;
+}
+
+
+li:hover > ul.dropmenu li {
+    display: block;
+}
