@@ -8,6 +8,7 @@
     padding: 0 0 10px 0;
     display: flex;
     list-style: none;
+    justify-content: space-between;
    
     &__logo {
        max-width: 45px;
@@ -15,11 +16,13 @@
     }
 
     &__button {
-      flex: 1;
+      flex-basis: 15%;
       margin-top: 20px;
       border-bottom: 2px solid transparent;
       text-align: center;
       font-size: 1.2rem;
+      font-weight: 300;
+      transition: all .8s;
     }
 
     &__button:nth-child(1) {
@@ -32,6 +35,7 @@
 
     &__button:hover {
         border-bottom: 2px solid  #eb7f00;
+        background: rgb(208, 208, 208);
     }
 
 

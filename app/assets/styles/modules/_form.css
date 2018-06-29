@@ -1,0 +1,59 @@
+.section-form {
+    padding-bottom: 75px;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form-row {
+
+    padding: 10px 0;
+    @mixin atMedium {
+        display: flex;
+        justify-content: space-around;
+    }
+   
+    &:last-of-type {
+        text-align: center;
+    }
+
+    &__label {
+        flex-basis: 35%;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    &__input {
+        display: block;
+        flex-basis: 60%;
+        font-size: 1.5rem;
+        font-weight: normal;
+        width: 100%;
+        padding: 7px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+    &__input_no-border {
+        border: 0;
+    }
+
+
+    &__input_no-padding {
+         padding: 0;
+    }
+
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+    
+}
+
+textarea {
+    height: 50px;
+    max-height: 100px;
+}
+
+*:focus {outline: none;}

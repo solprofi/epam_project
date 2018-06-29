@@ -2,7 +2,6 @@
 
 .features-section {
     display: block;
-    padding: 50px 0;
     text-align: center;
     justify-content: space-around;
     width: 100%;
@@ -11,8 +10,6 @@
 
     background: rgb(250, 250, 250);
 
- 
-
     &__subheading {
         font-size: 1.2rem;
         font-weight: 300;
@@ -20,12 +17,20 @@
 }
 
 .feature-container {
-    display: flex;
+    @mixin atMedium {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
 }
 
 .feature {
     text-align: center;
-    padding: 5% 4%;
+    padding: 1% 0;
+
+    @mixin atSmall {
+        padding: 5% 4%;
+    }
 
     &__heading {
         color: black;
@@ -44,18 +49,31 @@
     &__icon {
         font-size: 3rem;
         color: #EB7F00;
+        font-weight: 100;
+    }
+
+    &_less-padding {
+        padding: 0 0 6% 0;
     }
 
 }   
 
 
 .section-heading {
-    font-size: 4rem;
     text-transform: uppercase;
     word-spacing: 2px;
     letter-spacing: 5px;
     font-weight: 300;
     text-align: center;
+
+    font-size: 2rem;
+    @mixin atSmall {
+        margin: 0;
+        padding: 50px 0;
+        font-size: 3.5rem;
+        
+    }
+   
 }
 
 .section-heading::after {
