@@ -1,0 +1,51 @@
+.section-player {
+    display: flex;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+.player-col {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.list-col {
+    flex-basis: 30%;
+
+    &__heading {
+        font-size: 2rem;
+    }
+}
+
+.track-list {
+    padding-left: 15px;
+    &__track {
+        cursor: pointer;
+        padding: 5px 0;
+    }
+    
+}
+
+.description-col {
+    flex-basis: 30%;
+
+    &__description {
+        line-height: 165%;
+        word-spacing: 1px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

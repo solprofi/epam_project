@@ -1,7 +1,18 @@
 
 .footer {
     background-color: #333;
-    padding: 50px;
+    padding: 10px;
+    @mixin atSmall {
+        padding: 20px;
+    }
+
+    @mixin atMedium {
+        padding: 30px;
+    }
+
+    @mixin atLarge {
+        padding: 40px;
+    }
 
     &__info{
         color: #888;
@@ -12,11 +23,14 @@
 }
 
 .footer-nav {
-    display: flex;
+    @mixin atLarge {
+        display: flex;
+    }
     justify-content: space-between;
 }
 
 .footer-list {
+    display: block;
     flex-basis: 40%;
     padding: 0;
     list-style: none;
@@ -24,7 +38,24 @@
     justify-content: space-between;
 
     &_small {
-        flex-basis: 20%;
+        flex-basis: 30%;
+        width: 50%;
+        margin: 0 auto;
+        justify-content: space-around;
+
+        @mixin atLarge {
+            justify-content: space-between;
+            width: 100%;
+            margin: 15px 0;
+        }
+    }
+
+    &_wide {
+        flex: 1;
+    }
+
+    &_vertical {
+        display: initial;
     }
 
     &_more-padding-top {
@@ -37,8 +68,12 @@
         border: 0;
         color: #888;
         transition: color 0.4s;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 300;
+
+        @mixin atSmall {
+            font-size: 1.2rem;
+        }
     }
 
     &__link:hover,

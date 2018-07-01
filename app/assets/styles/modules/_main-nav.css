@@ -17,7 +17,7 @@
 
     &__button {
       flex-basis: 15%;
-      margin-top: 20px;
+      padding-top: 20px;
       border-bottom: 2px solid transparent;
       text-align: center;
       font-size: 1.2rem;
@@ -26,7 +26,7 @@
     }
 
     &__button:nth-child(1) {
-        margin-top: 0;
+        padding-top: 0;
     }
 
     &__button:nth-child(1):hover {
@@ -35,7 +35,7 @@
 
     &__button:hover {
         border-bottom: 2px solid  #eb7f00;
-        background: rgb(208, 208, 208);
+        // background: rgb(208, 208, 208);
     }
 
 

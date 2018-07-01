@@ -21,20 +21,17 @@
     width: 100%;
     box-shadow: 0 2px 2px #dadada;
 
-    margin-bottom: 10px;
-
     @mixin atSmall {
-        width: 70%;
-        margin: 10px auto;
+        width: 60%;
+        margin: 20px auto;
     }
 
     @mixin atMedium {
-        flex-basis: 28%;
+        flex-basis: 30%;
         text-align: left;
+        margin: 0;
     }
-    &:last-child {
-        margin-bottom: 0;
-    }
+
 }
 
 
@@ -42,6 +39,7 @@
 
     padding: 15px;
     border-bottom: 1px solid #e8e8e8;
+    text-align: left;
     &__heading {
         font-weight: 300;
         font-size: 2rem;
@@ -61,11 +59,19 @@
     }
 
     &__plan-price {
-        font-size: 5rem;
+        font-size: 3rem;
         margin-bottom: 10px;
         margin: 0;
         font-weight: 100;
         color: #EB7F00;
+
+        @mixin atSmall {
+            font-size: 4rem;
+        }
+
+        @mixin atMedium {
+            font-size: 4rem;
+        }
     }
 
     &__plan-price_small {
@@ -84,8 +90,12 @@
 
     &__elem {
         padding: 5px 0;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 300;
+
+        @mixin atSmall {
+            font-size: 1.4rem;
+        }
     }
 
     &__elem_check {
@@ -94,48 +104,3 @@
         padding-right: 20px;
     }
 }
-
-.btn:link,
-.btn:visited,
-input[type=submit] {
-    display: inline-block;
-    padding: 12px 40px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    transition: all .4s;
-}
-
-.btn-full:link,
-.btn-full:visited,
-input[type=submit] {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
-    color: #fff;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
-}
-
-.btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-    background-color: #cf6d17;
-}
-
-.btn-full:hover,
-.btn-full:active {
-    border: 1px solid #cf6d17;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid #cf6d17;
-    color: #fff;
-}
-
-

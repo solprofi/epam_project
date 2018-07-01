@@ -1,0 +1,25 @@
+.section-stats {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.stat-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.stat {
+    flex-basis: 20%;
+    text-align: center;
+    &__heading {
+        color:  #EB7F00;
+        text-transform: uppercase;
+        font-family: 'WireOne';
+        font-size: 4.5rem;
+        margin: 10px 0;
+    }
+    
+}

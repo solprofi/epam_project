@@ -6,21 +6,41 @@
 }
 
 .feature__quote {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 2%;
     font-style: italic;
     line-height: 145%;
     position: relative;
     margin-top: 40px;
+
+    @mixin atSmall {
+        font-size: 1.1rem;
+    }
+
+    @mixin atMedium {
+        font-size: 1.2rem;
+    }
 }
 
 .feature__quote:before {
     content: "\201C";
-    font-size: 500%;
+    font-size: 200%;
     display: block;
     position: absolute;
     top: -5px;
     left: -5px;
+
+    @mixin atSmall {
+        font-size: 300%;
+    }
+
+    @mixin atMedium {
+        font-size: 400%;
+    }
+
+    @mixin atLarge {
+        font-size: 500%;
+    }
 }
 
 .cite {
@@ -39,52 +59,3 @@
 
 
 
-
-/* SLIDESHOW */
-
-
-
-.slideshow-container {
-    /* max-width: 1000px; */
-    position: relative;
-    margin: auto;
-  }
-  
-  .slide {
-      display: none;
-  }
-  
-  .prev, 
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: auto;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 2rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, 
-  .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-
-  .fade {
-    animation-name: fade;
-    animation-duration: 2.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }

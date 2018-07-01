@@ -7,6 +7,10 @@ body {
     color: #555;
 }
 
+a {
+    text-decoration: none;
+}
+
 #wrapper {
     position: relative;
     width: 100%;
@@ -134,6 +138,3 @@ body {
     }
 }
 
-.track-list__track {
-    padding: 5px 0;
-}

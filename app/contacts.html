@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Contacts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	 crossorigin="anonymous">
+	<link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="screen" href="./temp/styles/styles.css" />
+	<script src="jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<nav class="main-nav">
+			<ul class="main-list">
+				<li class="main-list__button">
+					<a class="main-list__link" href="./index.html">
+						<img class="main-list__logo" src="./assets/images/Logo.png" alt="">
+					</a>
+				</li>
+				<li class="main-list__button">
+					<a class="main-list__link" href="#/">Library</a>
+					<ul class="dropmenu">
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+					</ul>
+				</li>
+				<li class="main-list__button">
+					<a class="main-list__link" href="#/">Subscriptions</a>
+					<ul class="dropmenu">
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+					</ul>
+				</li>
+				<li class="main-list__button">
+					<a class="main-list__link" href="#/">News</a>
+					<ul class="dropmenu">
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+					</ul>
+				</li>
+
+				<li class="main-list__button">
+					<a class="main-list__link" href="#/">Contacts</a>
+				</li>
+
+				<li class="main-list__button">
+					<a class="main-list__link" href="./login.html">Log in</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="intro-box">
+		<h2 class="intro-box__heading">Where music lives</h2>
+	</div>
+
+	<div class="section-stats">
+		<h2 class="contacts-heading">At a glance</h2>
+
+		<div class="slideshow-container slideshow-container_static slideshow-container_small">
+			<div class="slide fade">
+				<div class="stat-container">
+					<div class="stat">
+						<h3 class="stat__heading">14m</h3>
+						<h4 class="stat__description">active users</h4>
+					</div>
+					<div class="stat">
+						<h3 class="stat__heading">180+</h3>
+						<h4 class="stat__description">countries</h4>
+					</div>
+					<div class="stat">
+						<h3 class="stat__heading">53M</h3>
+						<h4 class="stat__description">tracks</h4>
+					</div>
+					<div class="stat">
+						<h3 class="stat__heading">100M</h3>
+						<h4 class="stat__description">playlists</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide fade">
+				<div class="stat-container">
+					<div class="stat">
+						<h3 class="stat__heading">360+</h3>
+						<h4 class="stat__description">editors</h4>
+					</div>
+					<div class="stat">
+						<h3 class="stat__heading">456</h3>
+						<h4 class="stat__description">cities</h4>
+					</div>
+					<div class="stat">
+						<h3 class="stat__heading">100M</h3>
+						<h4 class="stat__description">listens daily</h4>
+					</div>
+					<div class="stat">
+						<h3 class="stat__heading">50+</h3>
+						<h4 class="stat__description">newsic editors</h4>
+					</div>
+				</div>
+			</div>
+
+			<a class="prev prev_dark" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next next_dark" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+	</div>
+
+	<div class="section-world">
+		<h2 class="contacts-heading">Newsic around the world</h2>
+				<div id="map" class="map">
+	</div>
+
+	<div class="section-jobs">
+		<div class="feature-container">
+			<div class="feature">
+				<img class="feature__image" src="./assets/images/job.jpeg" alt="">
+				<h2 class="feature__heading">Jobs</h2>
+				<p class="feature__description">Want to help shape the future of your music?</p>
+				<a class="feature__link" href="#/">See positions <span class="feature__link_small">&#10095;</span></a>
+			</div>
+			<div class="feature">
+				<img class="feature__image" src="./assets/images/artist.jpg" alt="">
+				<h2 class="feature__heading">Labels &amp; Artists</h2>
+				<p class="feature__description">Share your music with the world on Newsic.</p>
+				<a class="feature__link" href="#/">Learn More <span class="feature__link_small">&#10095;</span></a>
+			</div>
+			<div class="feature">
+				<img class="feature__image" src="./assets/images/developer.jpeg" alt="">
+				<h2 class="feature__heading">Newsic for Developers</h2>
+				<p class="feature__description">Create something amazing around our open API.</p>
+				<a class="feature__link" href="#/">Learn More <span class="feature__link_small">&#10095;</span></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="section-social-media">
+		<h3 class="media-heading">Follow us</h2>
+		<ul class="media-list">
+			<li class="media-link">
+				<a class="media-link__elem" href="">
+					<i class="media-link__elem_icon-big media-link__elem_icon-fb icon ion-logo-facebook"></i>
+				</a>
+			</li>
+			<li class="media-link">
+				<a class="media-link__elem" href="">
+					<i class="media-link__elem_icon-big media-link__elem_icon-twitter icon ion-logo-twitter"></i>
+				</a>
+			</li>
+			<li class="media-link">
+				<a class="media-link__elem" href="">
+					<i class="media-link__elem_icon-big media-link__elem_icon-inst icon ion-logo-instagram"></i>
+				</a>
+			</li>
+			<li class="media-link">
+				<a class="media-link__elem" href="">
+					<i class="media-link__elem_icon-big media-link__elem_icon-google icon ion-logo-googleplus"></i>
+				</a>
+			</li>
+			<li class="media-link">
+				<a class="media-link__elem" href="">
+					<i class="media-link__elem_icon-big media-link__elem_icon-yt icon ion-logo-youtube"></i>
+				</a>
+			</li>
+			<li class="media-link">
+				<a class="media-link__elem" href="">
+					<i class="media-link__elem_icon-big media-link__elem_icon-linkedin icon ion-logo-linkedin"></i>
+				</a>
+			</li>
+			<li class="media-link">
+				<a class="media-link__elem" href="">
+					<i class="media-link__elem_icon-big media-link__elem_icon-pinterest icon ion-logo-pinterest"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<footer class="footer">
+		<div class="footer-nav">
+			<ul class="footer-list footer-list_wide">
+				<div class="list-container">
+					<h4 class="list-container__heading">Newsic</h4>
+					<ul class="footer-list footer-list_wide footer-list_vertical">
+						<li><a class="footer-list__link" href="#">Plans</a></li>
+						<li><a class="footer-list__link" href="#">Feature of the day</a></li>
+						<li><a class="footer-list__link" href="#">About us</a></li>
+						<li><a class="footer-list__link" href="#">Press</a></li>
+						<li><a class="footer-list__link" href="#">Jobs</a></li>
+					</ul>
+				</div>
+				
+				<div class="list-container">
+					<h4 class="list-container__heading">Extras</h4>
+					<ul class="footer-list footer-list_wide footer-list_vertical">
+						<li><a class="footer-list__link" href="#">Developers</a></li>
+						<li><a class="footer-list__link" href="#">Labels</a></li>
+						<li><a class="footer-list__link" href="#">Artists</a></li>
+					</ul>
+				</div>
+				<div class="list-container">
+					<h4 class="list-container__heading">Devices</h4>
+					<ul class="footer-list footer-list_wide footer-list_vertical">
+						<li><a class="footer-list__link" href="#">Android</a></li>
+						<li><a class="footer-list__link" href="#">iPhone-iPad</a></li>
+						<li><a class="footer-list__link" href="#">Windows Phone</a></li>
+						<li><a class="footer-list__link" href="#">PC/Mac</a></li>
+						<li><a class="footer-list__link" href="#">Tablets</a></li>
+						<li><a class="footer-list__link" href="#">TV</a></li>
+						<li><a class="footer-list__link" href="#">Sound Systems</a></li>
+					</ul>
+				</div>
+				<div class="list-container">
+					<h4 class="list-container__heading">Legal</h4>
+					<ul class="footer-list footer-list_wide footer-list_vertical">
+						<li><a class="footer-list__link" href="#">Terms and Conditions of Use</a></li>
+						<li><a class="footer-list__link" href="#">Personal data and cookies</a></li>
+						<li><a class="footer-list__link" href="#">Legal Notice</a></li>
+						<li><a class="footer-list__link" href="#">Privacy settings</a></li>
+					</ul>
+				</div>
+			</ul>
+		</div>
+		
+		
+		<p class="footer__info">Copyright &copy; 2018 by NEWSIC</p>
+	</footer>
+
+	<script src="./slider.js"></script>
+	<script src="./map.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtiZbSgpnLw5sgfdaEq3ZB3niW0RSJNDw&callback=myMap"></script>
+</body>
+
+</html>

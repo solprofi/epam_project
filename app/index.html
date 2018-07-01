@@ -19,7 +19,7 @@
     <nav class="main-nav">
       <ul class="main-list">
         <li class="main-list__button">
-          <a class="main-list__link" href="">
+          <a class="main-list__link" href="#">
             <img class="main-list__logo" src="./assets/images/Logo.png" alt="">
           </a>
         </li>
@@ -49,11 +49,14 @@
         </li>
 
         <li class="main-list__button">
-          <a class="main-list__link" href="#/">Contacts</a>
+          <a class="main-list__link" href="./contacts.html">Contacts</a>
         </li>
 
         <li class="main-list__button">
-          <a class="main-list__link" href="#/">Log in</a>
+          <a class="main-list__link" href="./login.html">Log in</a>
+          <ul class="dropmenu">
+            <li class="dropmenu-item">Sign Up</li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -138,7 +141,7 @@
       <div class="feature">
         <i class="feature__icon fab fa-itunes-note"></i>
         <h2 class="feature__heading">Global</h2>
-        <p class="feature__description">Your favorite artist? We have him.</p>
+        <p class="feature__description">Your favorite artist? We have him</p>
       </div>
       <div class="feature">
         <i class="feature__icon far fa-clock"></i>
@@ -205,9 +208,16 @@
         <div class="image-container__text">
           <h4>Listen now to: Sgt. Pepper's Lonely Hearts Club Band</h4>
           <h4>By: The Beatles</h4>
-
         </div>
       </div>
+
+      <div class="image-container image-container_hidden">
+          <img class="gallery__image" src="./assets/images/9.jpeg" alt="">
+          <div class="image-container__text">
+            <h4>Listen now to: Shanghai Tunes</h4>
+            <h4>By: 504/3</h4>
+          </div>
+        </div>
 
   </section>
 
@@ -215,7 +225,6 @@
     <h2 class="section-heading">Join the thousands who are already here</h2>
 
     <div class="slideshow-container">
-      
       <div class="slide fade">
         <div class="feature-container">
           <div class="feature feature_less-padding">
@@ -337,12 +346,11 @@
             <li class="advantage-list__elem">
               <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Unlimited acces</li>
             <li class="advantage-list__elem">
-              <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Pay only for liked tracks</li>
+              <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Pay for likes</li>
             <li class="advantage-list__elem">
-              <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Access to newest creations</li>
+              <i class="fas fa-times advantage-list__elem_check"></i>Lower bitrate</li>
             <li class="advantage-list__elem">
-              <i class="fas fa-times advantage-list__elem_check"></i>
-              </i>Unlimited time</li>
+              <i class="fas fa-times advantage-list__elem_check"></i>Occasional ads</li>
           </ul>
         </div>
         <div class="box">
@@ -364,9 +372,9 @@
             <li class="advantage-list__elem">
               <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Offline listening</li>
             <li class="advantage-list__elem">
-              <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Share your experience</li>
+              <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Share experience</li>
             <li class="advantage-list__elem">
-              <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Unlimited Time</li>
+              <i class="icon ion-md-checkmark advantage-list__elem_check"></i>No ads</li>
           </ul>
         </div>
         <div class="box">
@@ -377,10 +385,10 @@
       <div class="plan-box">
         <div class="box">
           <h3 class="box__heading">Business</h3>
-          <p class="box__plan-price">$399/
+          <p class="box__plan-price">$99/
             <span class="box__plan-price_small">month</span>
           </p>
-          <p class="box__price-meal">Make your staff happy!</p>
+          <p class="box__price-meal">Make your employees happy!</p>
         </div>
         <div class="box">
           <ul class="advantage-list">
@@ -389,9 +397,9 @@
             <li class="advantage-list__elem">
               <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Offline listening</li>
             <li class="advantage-list__elem">
-              <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Access to newest creations</li>
+              <i class="icon ion-md-checkmark advantage-list__elem_check"></i>FLAC-files</li>
             <li class="advantage-list__elem">
-              <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Group selections</li>
+              <i class="icon ion-md-checkmark advantage-list__elem_check"></i>Group sharing</li>
           </ul>
         </div>
         <div class="box">
@@ -439,10 +447,9 @@
           <label class="form-row__label" for="">Drop us a line!</label>
           <textarea class="form-row__input" name="textarea" id="textarea" cols="30" rows="5" placeholder="Your message for us!"></textarea>
         </div>
-      
         <div class="form-row">
-          <input type="submit" value="Send it!">
-        </div>
+          <input class="form-row__input" type="submit" value="Send it!">
+        <div class="form-row"></div>
       </form>
   </section>
 
@@ -460,22 +467,22 @@
 
       <ul class="footer-list footer-list_small">
           <li>
-            <a class="footer-list__link footer-list__link_fb" href="#">
+            <a class="footer-list__link footer-list__link_fb" href="#/">
               <i class="footer-list__link_icon icon ion-logo-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="footer-list__link footer-list__link_twitter" href="#">
+            <a class="footer-list__link footer-list__link_twitter" href="#/">
               <i class="footer-list__link_icon icon ion-logo-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="footer-list__link footer-list__link_inst" href="#">
+            <a class="footer-list__link footer-list__link_inst" href="#/">
               <i class="footer-list__link_icon icon ion-logo-instagram"></i>
             </a>
           </li>
           <li>
-            <a class="footer-list__link footer-list__link_google" href="#">
+            <a class="footer-list__link footer-list__link_google" href="#/">
               <i class="footer-list__link_icon icon ion-logo-googleplus"></i>
             </a>
           </li>

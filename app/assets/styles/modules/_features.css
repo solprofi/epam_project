@@ -21,15 +21,31 @@
         display: flex;
         justify-content: space-evenly;
     }
+
+    align-items: stretch;
     
 }
 
 .feature {
     text-align: center;
     padding: 1% 0;
+    flex: 1;
 
     @mixin atSmall {
+        padding: 2% 1%;
+    }
+
+    @mixin atMedium {
+        padding: 3% 2%;
+    }
+
+    @mixin atLarge {
         padding: 5% 4%;
+    }
+
+    &__image {
+        max-width: 300px;
+        border-radius: 5px;
     }
 
     &__heading {
@@ -42,8 +58,16 @@
     &__description {
         line-height: 145%;
         word-spacing: 2px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: black;
+
+        @mixin atSmall {
+            font-size: 1.1rem;
+        }
+
+        @mixin atMedium {
+            font-size: 1.2rem;
+        }
     }
 
     &__icon {
@@ -56,6 +80,24 @@
         padding: 0 0 6% 0;
     }
 
+    &__link {
+        text-decoration: none;
+        color: #EB7F00;
+        transition: all 1s;
+    }
+
+    &__link:hover {
+        color: #e6791a;
+    }
+
+    &__link:hover > span {
+        padding-left: 10px;
+    }
+
+    &__link_small {
+        font-size: .9rem;
+    }
+
 }   
 
 
@@ -65,13 +107,24 @@
     letter-spacing: 5px;
     font-weight: 300;
     text-align: center;
+    margin-top: 0;
+    padding: 10px 0;
 
     font-size: 2rem;
+
     @mixin atSmall {
         margin: 0;
-        padding: 50px 0;
+        padding: 20px 0;
+        font-size: 2.5rem;
+    }
+
+    @mixin atMedium {
+        font-size: 3rem;
+        padding: 40px 0;
+    }
+
+    @mixin atLarge {
         font-size: 3.5rem;
-        
     }
    
 }
