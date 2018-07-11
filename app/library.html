@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Library</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	 crossorigin="anonymous">
+	<link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="screen" href="./temp/styles/styles.css" />
+	<script src="jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="main-nav">
+			<ul class="main-list">
+				<li class="main-list__button">
+					<a class="main-list__link" href="./index.html">
+						<img class="main-list__logo" src="./assets/images/Logo.png" alt="">
+					</a>
+				</li>
+				<li class="main-list__button">
+					<a class="main-list__link" href="#/">Library</a>
+					<ul class="dropmenu">
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+					</ul>
+				</li>
+				<li class="main-list__button">
+					<a class="main-list__link" href="#/">Subscriptions</a>
+					<ul class="dropmenu">
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+					</ul>
+				</li>
+				<li class="main-list__button">
+					<a class="main-list__link" href="#/">News</a>
+					<ul class="dropmenu">
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+						<li class="dropmenu-item">text</li>
+					</ul>
+				</li>
+
+				<li class="main-list__button">
+					<a class="main-list__link" href="./contacts.html">Contacts</a>
+				</li>
+
+				<li class="main-list__button">
+					<a class="main-list__link" href="./login.html">Profile</a>
+				</li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<h2 class="section-heading">Music Library</h2>
+	<section class="section-library">
+		<div class="floating-player-col">
+			<div class="floating-player-wrapper">
+				<div class="floating-player">
+					<div class="floating-player__song-title" id="songTitle">Pick a song</div>
+
+					<div class="floating-player-controls">
+						<button class="floating-player-controls__btn  floating-player-controls__btn_pre" id="pre" onclick="pre()">
+							<img class="floating-player-controls__btn_centered" src="./assets/images/Pre.png" height="90%" width="90%" />
+						</button>
+						<button class="floating-player-controls__btn" id="play" onclick="playOrPauseSong()">
+							<img class="floating-player-controls__btn_centered" src="./assets/images/Play.png" />
+						</button>
+						<button class="floating-player-controls__btn floating-player-controls__btn_next" id="next" onclick="next()">
+							<img class="floating-player-controls__btn_centered " src="./assets/images/Next.png" height="90%" width="90%" />
+						</button>
+					</div>
+
+					<div class="seek-bar" id="seek-bar">
+						<div class="seek-bar__fill" id="fill"></div>
+						<div class="seek-bar__handle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="library">
+			<div class="library-row">
+				<div class="album-container">
+					<img class="album-container__image" src="./assets/images/1.jpg" alt="">
+				</div>
+
+				<div class="list-container list-container_flex">
+					<h3 class="list-container__heading">Kids see ghosts</h3>
+					<ol class="track-list">
+						<li class="track-list__track" onclick="pickSong(0)">Tuscan Leather</li>
+						<li class="track-list__track" onclick="pickSong(1)">Furthest Thing</li>
+						<li class="track-list__track" onclick="pickSong(2)">Started from the Bottom</li>
+						<li class="track-list__track" onclick="pickSong(3)">Wu-Tang Forever</li>
+						<li class="track-list__track" onclick="pickSong(4)">Own It</li>
+						<li class="track-list__track" onclick="pickSong(5)">Worst Behavior</li>
+						<li class="track-list__track" onclick="pickSong(6)">From Time feat. Jhené Aiko</li>
+						<li class="track-list__track" onclick="pickSong(7)">Hold On, We're Going Home</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="library-row">
+				<div class="album-container">
+					<img class="album-container__image" src="./assets/images/1.jpg" alt="">
+				</div>
+
+				<div class="list-container list-container_flex">
+					<h3 class="list-container__heading">Kids see ghosts</h3>
+					<ol class="track-list">
+						<li class="track-list__track" onclick="pickSong(0)">Tuscan Leather</li>
+						<li class="track-list__track" onclick="pickSong(1)">Furthest Thing</li>
+						<li class="track-list__track" onclick="pickSong(2)">Started from the Bottom</li>
+						<li class="track-list__track" onclick="pickSong(3)">Wu-Tang Forever</li>
+						<li class="track-list__track" onclick="pickSong(4)">Own It</li>
+						<li class="track-list__track" onclick="pickSong(5)">Worst Behavior</li>
+						<li class="track-list__track" onclick="pickSong(6)">From Time feat. Jhené Aiko</li>
+						<li class="track-list__track" onclick="pickSong(7)">Hold On, We're Going Home</li>
+					</ol>
+				</div>
+			</div>
+
+
+			<div class="library-row">
+				<div class="album-container">
+					<img class="album-container__image" src="./assets/images/1.jpg" alt="">
+				</div>
+
+				<div class="list-container list-container_flex">
+					<h3 class="list-container__heading">Kids see ghosts</h3>
+					<ol class="track-list">
+						<li class="track-list__track" onclick="pickSong(0)">Tuscan Leather</li>
+						<li class="track-list__track" onclick="pickSong(1)">Furthest Thing</li>
+						<li class="track-list__track" onclick="pickSong(2)">Started from the Bottom</li>
+						<li class="track-list__track" onclick="pickSong(3)">Wu-Tang Forever</li>
+						<li class="track-list__track" onclick="pickSong(4)">Own It</li>
+						<li class="track-list__track" onclick="pickSong(5)">Worst Behavior</li>
+						<li class="track-list__track" onclick="pickSong(6)">From Time feat. Jhené Aiko</li>
+						<li class="track-list__track" onclick="pickSong(7)">Hold On, We're Going Home</li>
+					</ol>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</section>
+
+
+
+	</div>
+
+	<footer class="footer">
+		<div class="footer-nav">
+			<ul class="footer-list footer-list_more-padding-top">
+				<li>
+					<a a class="footer-list__link" href="#">Library</a>
+				</li>
+				<li>
+					<a a class="footer-list__link" href="#">Subscriptions</a>
+				</li>
+				<li>
+					<a a class="footer-list__link" href="#">News</a>
+				</li>
+				<li>
+					<a a class="footer-list__link" href="#">Contacts</a>
+				</li>
+				<li>
+					<a a class="footer-list__link" href="#">Jobs</a>
+				</li>
+			</ul>
+
+			<ul class="footer-list footer-list_small">
+				<li>
+					<a class="footer-list__link footer-list__link_fb" href="#/">
+						<i class="footer-list__link_icon icon ion-logo-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a class="footer-list__link footer-list__link_twitter" href="#/">
+						<i class="footer-list__link_icon icon ion-logo-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a class="footer-list__link footer-list__link_inst" href="#/">
+						<i class="footer-list__link_icon icon ion-logo-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a class="footer-list__link footer-list__link_google" href="#/">
+						<i class="footer-list__link_icon icon ion-logo-googleplus"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<p class="footer__info">Copyright &copy; 2018 by NEWSIC</p>
+	</footer>
+
+	<script src="player.js"></script>
+</body>
+
+</html>

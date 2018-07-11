@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Newsic</title>
+	<title>Player</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
 	 crossorigin="anonymous">
 	<link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
 		<nav class="main-nav">
 			<ul class="main-list">
 				<li class="main-list__button">
-					<a class="main-list__link" href="#">
+					<a class="main-list__link" href="./index.html">
 						<img class="main-list__logo" src="./assets/images/Logo.png" alt="">
 					</a>
 				</li>
@@ -53,37 +53,31 @@
 				</li>
 
 				<li class="main-list__button">
-					<a class="main-list__link" href="./login.html">Log in</a>
-					<ul class="dropmenu">
-						<li class="dropmenu-item">Sign Up</li>
-					</ul>
+					<a class="main-list__link" href="./login.html">Profile</a>
 				</li>
 			</ul>
 		</nav>
 
 	</header>
-	<h2 class="section-heading">Nothing was the same</h2>
-	<div class="section-player">
 
+	<h2 class="player-heading">Nothing was the same</h2>
+
+	<div class="section-player">
 
 		<div class="player-col">
 			<div class="player-wrapper">
-				<img class="player-wrapper__album-img" src="./assets/images/player-album-bg.jpeg" />
-
 				<div class="player">
 					<div class="player__song-title" id="songTitle">Pick a song</div>
 
 					<div class="player-controls">
 						<button class="player-controls__btn  player-controls__btn_pre" id="pre" onclick="pre()">
-							<img class="player-controls__btn_centered" src="./assets/images/Pre.png" height="90%" width="90%"
-							/>
+							<img class="player-controls__btn_centered" src="./assets/images/Pre.png" height="90%" width="90%" />
 						</button>
 						<button class="player-controls__btn" id="play" onclick="playOrPauseSong()">
 							<img class="player-controls__btn_centered" src="./assets/images/Play.png" />
 						</button>
 						<button class="player-controls__btn player-controls__btn_next" id="next" onclick="next()">
-							<img class="player-controls__btn_centered " src="./assets/images/Next.png" height="90%" width="90%"
-							/>
+							<img class="player-controls__btn_centered " src="./assets/images/Next.png" height="90%" width="90%" />
 						</button>
 					</div>
 
@@ -98,25 +92,25 @@
 		<div class="list-col">
 			<h2 class="list-col__heading">Track-list</h2>
 			<ol class="track-list">
-				<li class="track-list__track"  onclick="pickSong(0)">Tuscan Leather</li>
-				<li class="track-list__track"  onclick="pickSong(1)">Furthest Thing</li>
-				<li class="track-list__track"  onclick="pickSong(2)">Started from the Bottom</li>
-				<li class="track-list__track"  onclick="pickSong(3)">Wu-Tang Forever</li>
-				<li class="track-list__track"  onclick="pickSong(4)">Own It</li>
-				<li class="track-list__track"  onclick="pickSong(5)">Worst Behavior</li>
-				<li class="track-list__track"  onclick="pickSong(6)">From Time feat. Jhené Aiko</li>
-				<li class="track-list__track"  onclick="pickSong(7)">Hold On, We're Going Home feat. Majid Jordan</li>
+				<li class="track-list__track" onclick="pickSong(0)">Tuscan Leather</li>
+				<li class="track-list__track" onclick="pickSong(1)">Furthest Thing</li>
+				<li class="track-list__track" onclick="pickSong(2)">Started from the Bottom</li>
+				<li class="track-list__track" onclick="pickSong(3)">Wu-Tang Forever</li>
+				<li class="track-list__track" onclick="pickSong(4)">Own It</li>
+				<li class="track-list__track" onclick="pickSong(5)">Worst Behavior</li>
+				<li class="track-list__track" onclick="pickSong(6)">From Time feat. Jhené Aiko</li>
+				<li class="track-list__track" onclick="pickSong(7)">Hold On, We're Going Home feat. Majid Jordan</li>
 			</ol>
 		</div>
 
-		<div class="description-col">
-				<h2 class="list-col__heading">About the album</h2>
-				<p class="description-col__description">
-					Nothing Was the Same received generally positive reviews from critics. The album was also a commercial success, debuting
-					at number one on the US Billboard 200, selling 658,000 copies in its first week of release. It became the seventh best-selling
-					album of 2013 in the United States. It also debuted within the top two positions in Canada, Denmark, Australia and the United
-					Kingdom. As of August 2016, the album has sold over 1.7 million copies in the United States.
-				</p>
+		<div class="list-col">
+			<h2 class="list-col__heading">About the album</h2>
+			<p class="list-col__description">
+				Nothing Was the Same received generally positive reviews from critics. The album was also a commercial success, debuting
+				at number one on the US Billboard 200, selling 658,000 copies in its first week of release. It became the seventh best-selling
+				album of 2013 in the United States. It also debuted within the top two positions in Canada, Denmark, Australia and the
+				United Kingdom. As of August 2016, the album has sold over 1.7 million copies in the United States.
+			</p>
 		</div>
 
 	</div>

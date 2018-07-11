@@ -1,18 +1,25 @@
 .section-player {
-    display: flex;
+    display: block;
     position: relative;
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 75px;
 }
 
 .player-col {
     flex-basis: 40%;
     position: relative;
+    height: 600px;
+    width: 100%;
+    border-radius: 0;
+    background: url('https://cdn-images-1.medium.com/max/2000/1*cGCU2iqsJ2IjzkKsvef4NQ.jpeg');
+    background-size: cover;
+    background-position: center;
+
 }
 
 .list-col {
     flex-basis: 30%;
-
+    padding-left: 20px;
     &__heading {
         font-size: 2rem;
     }
@@ -20,21 +27,17 @@
 
 .track-list {
     padding-left: 15px;
+
     &__track {
         cursor: pointer;
         padding: 5px 0;
     }
-    
-}
-
-.description-col {
-    flex-basis: 30%;
 
     &__description {
         line-height: 165%;
         word-spacing: 1px;
     }
-
+    
 }
 
 

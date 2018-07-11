@@ -18,44 +18,44 @@
   <header>
     <nav class="main-nav">
       <ul class="main-list">
-        <li class="main-list__button">
+        <li class="main-list__button main-list__button_logo">
           <a class="main-list__link" href="#">
             <img class="main-list__logo" src="./assets/images/Logo.png" alt="">
           </a>
         </li>
         <li class="main-list__button">
-          <a class="main-list__link" href="#/">Library</a>
-          <ul class="dropmenu">
-            <li class="dropmenu-item">text</li>
-            <li class="dropmenu-item">text</li>
-            <li class="dropmenu-item">text</li>
+          <a class="main-list__link" href="./library.html">Library</a>
+          <ul class="main-list__drop-menu">
+            <li class="main-list__button main-list__button_inside js-btn-top-picks"><a class="main-list__link" href="#/">Top Picks</a></li>
           </ul>
         </li>
         <li class="main-list__button">
-          <a class="main-list__link" href="#/">Subscriptions</a>
-          <ul class="dropmenu">
-            <li class="dropmenu-item">text</li>
-            <li class="dropmenu-item">text</li>
-            <li class="dropmenu-item">text</li>
+          <a class="main-list__link js-btn-subscriptions" href="#/">Subscriptions</a>
+          <ul class="main-list__drop-menu">
+            <li class="main-list__button main-list__button_inside js-btn-about-us"><a class="main-list__link" href="#/">About Us</a></li>
+            <li class="main-list__button main-list__button_inside js-btn-reviews"><a class="main-list__link" href="#/">Reviews</a></li>
+            <li class="main-list__button main-list__button_inside js-btn-steps"><a class="main-list__link" href="#/">Mobile</a></li>
           </ul>
         </li>
         <li class="main-list__button">
           <a class="main-list__link" href="#/">News</a>
-          <ul class="dropmenu">
-            <li class="dropmenu-item">text</li>
-            <li class="dropmenu-item">text</li>
-            <li class="dropmenu-item">text</li>
+          <ul class="main-list__drop-menu">
+            <li class="main-list__button main-list__button_inside"><a class="main-list__link" href="#/">Blog</a></li>
+            <li class="main-list__button main-list__button_inside"><a class="main-list__link" href="#/">Trends</a></li>
           </ul>
         </li>
 
         <li class="main-list__button">
           <a class="main-list__link" href="./contacts.html">Contacts</a>
+          <ul class="main-list__drop-menu">
+            <li class="main-list__button main-list__button_inside js-btn-form"><a class="main-list__link" href="#/">Write us</a></li>
+          </ul>
         </li>
 
         <li class="main-list__button">
           <a class="main-list__link" href="./login.html">Log in</a>
-          <ul class="dropmenu">
-            <li class="dropmenu-item">Sign Up</li>
+          <ul class="main-list__drop-menu">
+            <li class="main-list__button main-list__button_inside"><a class="main-list__link" href="./sign-up.html">Sign Up</a></li>
           </ul>
         </li>
       </ul>
@@ -84,7 +84,7 @@
             </ol>
           </div>
 
-          <h3 class="album-title album-title_bottom">Nothing was the same</h3>
+          <h3 hre class="album-title album-title_bottom">Nothing was the same</h3>
           <img class="layer__image" src="./assets/images/Drake-1.jpg" alt="">
         </div>
       </div>
@@ -111,7 +111,7 @@
             </ol>
           </div>
 
-          <h3 class="album-title album-title_top">Nothing was the same</h3>
+          <h3 class="album-title album-title_top"><a href="./player.html">Nothing was the same</a></h3>
           <img class="layer__image" src="./assets/images/Drake-2.jpg" alt="">
         </div>
       </div>
@@ -120,12 +120,12 @@
     </div>
   </header>
 
-
-  <section class="features-section">
+  <section class="features-section js-section-about-us">
     <h2 class="section-heading">Music listening. Reinvented.</h2>
     <h3 class="features-section__subheading">
       Innovate music library. Pay only for the music that you like.
       <br> You get 3 free plays for a song. If you do not like it - you do not pay for it.
+      <br>Everything you want is here.
     </h3>
     <div class="feature-container">
       <div class="feature">
@@ -151,7 +151,7 @@
     </div>
   </section>
 
-  <section class="gallery-section">
+  <section class="gallery-section js-section-top-picks">
     <h2 class="section-heading">Our top picks</h2>
     <div class="gallery">
       <div class="image-container">
@@ -221,7 +221,7 @@
 
   </section>
 
-  <section class="review-section">
+  <section class="review-section js-section-reviews">
     <h2 class="section-heading">Join the thousands who are already here</h2>
 
     <div class="slideshow-container">
@@ -295,7 +295,7 @@
     
   </section>
 
-  <section class="section-steps">
+  <section class="section-steps js-section-steps">
     <h2 class="section-heading">the finest interface</h2>
     
     <div class="feature-container">
@@ -310,11 +310,11 @@
         </div>
         <div class="works-step">
           <div class="works-step__step-num">2</div>
-          <p class="works-step__description">Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+          <p class="works-step__description">Download our app and find everything you desire. Unlimited streaming</p>
         </div>
         <div class="works-step">
           <div class="works-step__step-num">3</div>
-          <p class="works-step__description">Enjoy your meal after less than 20 minutes. See you the next time!</p>
+          <p class="works-step__description">Enjoy your music after every day. See you the next time!</p>
         </div>
     
         <a class="btn-app" href="#/">
@@ -329,7 +329,7 @@
 
   </section>
 
-  <section class="section-plans">
+  <section class="section-plans js-section-subscriptions">
     <h2 class="section-heading">Start your journey today</h2>
     
     <div class="plan-container">
@@ -409,8 +409,7 @@
     </div>
   </section>
 
-
-  <section class="section-form">
+  <section class="section-form js-section-form">
       <h2 class="section-heading"> We're happy to hear from you</h2>
       <form class="contact-form" action="#">
         <div class="form-row">
@@ -453,7 +452,6 @@
       </form>
   </section>
 
-
   <footer class="footer">
     <div class="footer-nav">
 
@@ -493,6 +491,7 @@
   </footer>
 
   <script src="./slider.js"></script>
+  <script src="scroller.js"></script>
 </body>
 
 </html>

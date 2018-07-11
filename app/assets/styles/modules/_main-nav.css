@@ -1,12 +1,14 @@
 /* TOP NAVIGATION */
 .main-nav {
-    background: #eee;
+    background: rgb(213, 213, 213);
+    
 }
 
 .main-list {
+    position: relative;
     margin: 0;
-    padding: 0 0 10px 0;
     display: flex;
+    padding: 0;
     list-style: none;
     justify-content: space-between;
    
@@ -16,49 +18,65 @@
     }
 
     &__button {
-      flex-basis: 15%;
+      position: relative;
+      background: rgb(238, 238, 238);
+      flex: 1;
       padding-top: 20px;
-      border-bottom: 2px solid transparent;
       text-align: center;
       font-size: 1.2rem;
       font-weight: 300;
-      transition: all .8s;
+      transition: all .5s;
+      z-index: 999;
+      border-right: 1px solid rgb(186, 186, 186);
     }
 
     &__button:nth-child(1) {
         padding-top: 0;
     }
 
-    &__button:nth-child(1):hover {
-        border-bottom: 2px solid transparent;
+    &__button:last-child {
+        border-right: none;
     }
 
     &__button:hover {
-        border-bottom: 2px solid  #eb7f00;
-        // background: rgb(208, 208, 208);
+        background: rgb(201, 201, 201);
     }
 
+    &__button:hover &__button_inside {
+        display: block;
+    }
+
+    &__button_inside {
+        display: none;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        padding: 10px 0 !important;
+    }
+
+    &__button_inside:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    &__button_logo:hover {
+        background: rgb(238, 238, 238);
+    }
 
     &__link {
        text-decoration: none;
        text-transform: uppercase;
        color: black;
+       display: inline-block;
+       width: 100%;
     }
 
-}
 
-
-.dropmenu {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-
-.dropmenu-item {
-    display: none;
-}
-
-
-li:hover > ul.dropmenu li {
-    display: block;
+    &__drop-menu {
+        position: absolute;
+        top: 100%;
+        width: 240px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
 }

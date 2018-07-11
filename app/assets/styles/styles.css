@@ -16,6 +16,8 @@
 @import './modules/_section-stats.css';
 @import './modules/_section-world.css';
 @import './modules/_section-player.css';
+@import './modules/_section-library.css';
 @import './modules/_login.css';
 @import './modules/_player.css';
+@import './modules/_player-floating.css';
 @import './modules/_section-social-media.css';
