@@ -33,6 +33,23 @@
         border: 1px solid #ccc;
     }
 
+    &__input_submit {
+        display: block !important;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+
+        @mixin atMedium {
+            width: 35%;
+        }
+
+        @mixin atLarge {
+            width: 25%;
+        }
+
+    }
+
     &__input_no-border {
         border: 0;
     }

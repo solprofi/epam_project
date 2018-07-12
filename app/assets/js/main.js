@@ -17,3 +17,10 @@ document.addEventListener('DOMContentLoaded', function(){
       topLayer.style.width= e.clientX + skew + delta + 'px';
     });
   });
+
+  // window.onload = function () {
+  //   window.scrollTo(0, 0);
+  //   console.log("scrolled");
+    
+  // }
+

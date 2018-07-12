@@ -1,5 +1,6 @@
 @import 'normalize.css';
 @import './modules/_mixins.css';
+@import './modules/_animations.css';
 @import './modules/_mixins-gallery.css';
 @import './modules/_buttons.css';
 @import './modules/_header.css';
@@ -18,6 +19,7 @@
 @import './modules/_section-world.css';
 @import './modules/_section-player.css';
 @import './modules/_section-library.css';
+@import './modules/_section-day-choice.css';
 @import './modules/_login.css';
 @import './modules/_player.css';
 @import './modules/_player-floating.css';

@@ -1,6 +1,7 @@
 /* FEATURES */
 
 .features-section {
+    position: relative;
     display: block;
     text-align: center;
     justify-content: space-around;
@@ -109,8 +110,11 @@
     text-align: center;
     margin-top: 0;
     padding: 10px 0;
-
     font-size: 2rem;
+
+    &_plans {
+        font-weight: 400;
+    }
 
     @mixin atSmall {
         margin: 0;
@@ -126,14 +130,19 @@
     @mixin atLarge {
         font-size: 3.5rem;
     }
-   
+
+    &::after,
+    &_plans::after {
+        display: block;
+        content: '';
+        background: #EB7F00;
+        height: 2px;
+        width: 300px;
+        margin: 20px auto 0 auto;
+    }
+
+    &_plans::after {
+        background: white;
+    }
 }
 
-.section-heading::after {
-    display: block;
-    content: '';
-    background: #EB7F00;
-    height: 2px;
-    width: 300px;
-    margin: 20px auto 0 auto;
-}
