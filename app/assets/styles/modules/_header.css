@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+  background: linear-gradient(0.25turn, rgb(231, 130, 136), rgb(243, 198, 103));
+}
+
+.hero-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+
+  &__heading {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #555;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+

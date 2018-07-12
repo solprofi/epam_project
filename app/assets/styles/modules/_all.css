@@ -32,6 +32,7 @@ a {
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
+        cursor: pointer;
     }
 }
 
@@ -86,7 +87,8 @@ a {
 }
 
 .top {
-    background:#eee;
+    background: #eee;
+
     color: #222;
     z-index: 2;
     width: 50vw;

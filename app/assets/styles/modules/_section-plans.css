@@ -19,7 +19,8 @@
     background-color: #fff;
     border-radius: 5px;
     width: 100%;
-    box-shadow: 0 2px 2px #dadada;
+    box-shadow: 2px 2px 5px #dadada, -2px 2px 5px #dadada;
+    transition: all .5s;
 
     @mixin atSmall {
         width: 60%;
@@ -103,4 +104,10 @@
         font-size: 1.4rem;
         padding-right: 20px;
     }
+}
+
+
+.act {
+   margin-top: -10px;
+   box-shadow: 3px 3px 25px #dadada, -3px 3px 25px #dadada;
 }

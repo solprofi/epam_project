@@ -7,7 +7,7 @@
     width: 400px;
     display: inline-block;
     border-radius: 15px;
-    background: url('https://cdn-images-1.medium.com/max/2000/1*cGCU2iqsJ2IjzkKsvef4NQ.jpeg');
+    background: url('../images/player-album-bg.jpeg');
     background-size: cover;
     background-position: center;
 }

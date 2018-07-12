@@ -1,5 +1,5 @@
 .login-container{
-    background: url('https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background: url('../images/login-bg.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -23,7 +23,7 @@
         height: 600px;
     }
 
-    box-shadow: 5px 5px 5px #353535;
+    box-shadow: 3px 3px 5px #353535, -3px 3px 5px #353535;
 
     &__heading {
         margin: 0;
@@ -49,7 +49,7 @@
     position: absolute;
     top: -50px;
     left: calc(50% - 50px);
-    box-shadow: 2px 2px 5px #353535;
+    box-shadow: 2px 2px 5px #353535, -2px 2px 5px #353535;
 }
 
 .login-form {

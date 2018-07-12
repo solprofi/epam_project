@@ -76,7 +76,7 @@ function updateListAppearance(i) {
 function playSong(){
     song.src = songs[currentSong];  //set the source of 0th song 
     songTitle.textContent = songTitles[currentSong]; // set the title of song
-    song.play();
+    // song.play();
 }
 
 function changeImgToPause() {

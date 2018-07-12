@@ -19,37 +19,37 @@
 	<header>
 		<nav class="main-nav">
 			<ul class="main-list">
-				<li class="main-list__button main-list__button_logo">
-					<a class="main-list__link" href="./index.html">
-						<img class="main-list__logo" src="./assets/images/Logo.png" alt="">
-					</a>
-				</li>
+					<li class="main-list__button main-list__button_logo main-list__button_beat">
+							<a class="main-list__link main-list__link_beat" href="./index.html" >
+								<div class="main-list__link_scale"></div>
+								<div class="main-list__link_scale"></div>
+								<div class="main-list__link_scale"></div>
+								<img class="main-list__logo" src="./assets/images/Logo.png" alt="">
+							</a>
+						</li>
 				<li class="main-list__button">
 					<a class="main-list__link" href="./library.html">Library</a>
-				</li>
-				<li class="main-list__button">
-					<a class="main-list__link" href="#/">Subscriptions</a>
 				</li>
 				<li class="main-list__button">
 					<a class="main-list__link" href="#/">News</a>
 					<ul class="main-list__drop-menu">
 						<li class="main-list__button main-list__button_inside">
-							<a class="main-list__link" href="/#">Blog</a>
+							<a class="main-list__link" href="#/">Blog</a>
 						</li>
 						<li class="main-list__button main-list__button_inside">
-							<a class="main-list__link" href="/#">Trends</a>
+							<a class="main-list__link" href="#/">Trends</a>
 						</li>
 					</ul>
 				</li>
 
 				<li class="main-list__button">
-					<a class="main-list__link" href="./contacts.html">Contacts</a>
+					<a class="main-list__link" href="#/">Contacts</a>
 					<ul class="main-list__drop-menu">
-						<li class="main-list__button main-list__button_inside">
-							<a class="main-list__link" href="">Offices</a>
+						<li class="main-list__button main-list__button_inside js-btn-map">
+							<a class="main-list__link" href="#/">Offices</a>
 						</li>
-						<li class="main-list__button main-list__button_inside">
-							<a class="main-list__link" href="">Social media</a>
+						<li class="main-list__button main-list__button_inside js-btn-social-media">
+							<a class="main-list__link" href="#/">Social media</a>
 						</li>
 					</ul>
 				</li>
@@ -74,7 +74,7 @@
 		<h2 class="contacts-heading">At a glance</h2>
 
 		<div class="slideshow-container slideshow-container_static slideshow-container_small">
-			<div class="slide fade">
+			<div class="slide1 fade">
 				<div class="stat-container">
 					<div class="stat">
 						<h3 class="stat__heading">14m</h3>
@@ -95,7 +95,7 @@
 				</div>
 			</div>
 
-			<div class="slide fade">
+			<div class="slide1 fade">
 				<div class="stat-container">
 					<div class="stat">
 						<h3 class="stat__heading">360+</h3>
@@ -116,12 +116,12 @@
 				</div>
 			</div>
 
-			<a class="prev prev_dark" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next next_dark" onclick="plusSlides(1)">&#10095;</a>
+			<a class="prev prev_dark js-prev-1" >&#10094;</a>
+			<a class="next next_dark js-next-1" >&#10095;</a>
 		</div>
 	</div>
 
-	<div class="section-world">
+	<div class="section-world js-section-world">
 		<h2 class="contacts-heading">Newsic around the world</h2>
 		<div id="map" class="map">
 		</div>
@@ -155,7 +155,7 @@
 			</div>
 		</div>
 
-		<div class="section-social-media">
+		<div class="section-social-media js-section-social-media">
 			<h3 class="media-heading">Follow us</h2>
 				<ul class="media-list">
 					<li class="media-link">
@@ -204,19 +204,19 @@
 						<h4 class="list-container__heading">Newsic</h4>
 						<ul class="footer-list footer-list_wide footer-list_vertical">
 							<li>
-								<a class="footer-list__link" href="#">Plans</a>
+								<a class="footer-list__link" href="#/">Plans</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">Feature of the day</a>
+								<a class="footer-list__link" href="#/">Feature of the day</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">About us</a>
+								<a class="footer-list__link" href="#/">About us</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">Press</a>
+								<a class="footer-list__link" href="#/">Press</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">Jobs</a>
+								<a class="footer-list__link" href="#/">Jobs</a>
 							</li>
 						</ul>
 					</div>
@@ -225,13 +225,13 @@
 						<h4 class="list-container__heading">Extras</h4>
 						<ul class="footer-list footer-list_wide footer-list_vertical">
 							<li>
-								<a class="footer-list__link" href="#">Developers</a>
+								<a class="footer-list__link" href="#/">Developers</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">Labels</a>
+								<a class="footer-list__link" href="#/">Labels</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">Artists</a>
+								<a class="footer-list__link" href="#/">Artists</a>
 							</li>
 						</ul>
 					</div>
@@ -239,25 +239,25 @@
 						<h4 class="list-container__heading">Devices</h4>
 						<ul class="footer-list footer-list_wide footer-list_vertical">
 							<li>
-								<a class="footer-list__link" href="#">Android</a>
+								<a class="footer-list__link" href="#/">Android</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">iPhone-iPad</a>
+								<a class="footer-list__link" href="#/">iPhone-iPad</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">Windows Phone</a>
+								<a class="footer-list__link" href="#/">Windows Phone</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">PC/Mac</a>
+								<a class="footer-list__link" href="#/">PC/Mac</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">Tablets</a>
+								<a class="footer-list__link" href="#/">Tablets</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">TV</a>
+								<a class="footer-list__link" href="#/">TV</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">Sound Systems</a>
+								<a class="footer-list__link" href="#/">Sound Systems</a>
 							</li>
 						</ul>
 					</div>
@@ -265,16 +265,16 @@
 						<h4 class="list-container__heading">Legal</h4>
 						<ul class="footer-list footer-list_wide footer-list_vertical">
 							<li>
-								<a class="footer-list__link" href="#">Terms and Conditions of Use</a>
+								<a class="footer-list__link" href="#/">Terms and Conditions of Use</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">Personal data and cookies</a>
+								<a class="footer-list__link" href="#/">Personal data and cookies</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">Legal Notice</a>
+								<a class="footer-list__link" href="#/">Legal Notice</a>
 							</li>
 							<li>
-								<a class="footer-list__link" href="#">Privacy settings</a>
+								<a class="footer-list__link" href="#/">Privacy settings</a>
 							</li>
 						</ul>
 					</div>
@@ -285,8 +285,11 @@
 			<p class="footer__info">Copyright &copy; 2018 by NEWSIC</p>
 		</footer>
 
-		<script src="./slider.js"></script>
-		<script src="./map.js"></script>
+		<script src="./assets/js/slider.js"></script>
+		<script src="./assets/js/slider-contacts.js"></script>
+		<script src="./assets/js/map.js"></script>
+		<script src="./assets/js/scroller.js"></script>
+		<script src="./assets/js/scroller-events-contacts.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtiZbSgpnLw5sgfdaEq3ZB3niW0RSJNDw&callback=myMap"></script>
 </body>
 

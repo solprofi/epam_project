@@ -42,4 +42,18 @@ input[type=submit]:active {
     color: #fff;
 }
 
+.btn-ghost_hero:link,
+.btn-ghost_hero:visited {
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #e67e22;
+}
+
+.btn-full_hero:link,
+.btn-full_hero:visited {
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #e67e22;
+}
 

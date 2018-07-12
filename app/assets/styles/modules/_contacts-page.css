@@ -1,5 +1,5 @@
 .intro-box {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('https://images.pexels.com/photos/374777/pexels-photo-374777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../images/contacts-bg.jpeg');
     background-size: cover;
     background-attachment: fixed;
     height: 70vh;

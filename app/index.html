@@ -4,121 +4,107 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Newsic</title>
+  <title>Music Reinvented - Newsic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="./temp/styles/styles.css" />
-  <script src="main.js"></script>
+  <script src="./assets/js/main.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav class="main-nav">
-      <ul class="main-list">
-        <li class="main-list__button main-list__button_logo">
-          <a class="main-list__link" href="#">
-            <img class="main-list__logo" src="./assets/images/Logo.png" alt="">
-          </a>
-        </li>
-        <li class="main-list__button">
-          <a class="main-list__link" href="./library.html">Library</a>
-          <ul class="main-list__drop-menu">
-            <li class="main-list__button main-list__button_inside js-btn-top-picks"><a class="main-list__link" href="#/">Top Picks</a></li>
-          </ul>
-        </li>
-        <li class="main-list__button">
-          <a class="main-list__link js-btn-subscriptions" href="#/">Subscriptions</a>
-          <ul class="main-list__drop-menu">
-            <li class="main-list__button main-list__button_inside js-btn-about-us"><a class="main-list__link" href="#/">About Us</a></li>
-            <li class="main-list__button main-list__button_inside js-btn-reviews"><a class="main-list__link" href="#/">Reviews</a></li>
-            <li class="main-list__button main-list__button_inside js-btn-steps"><a class="main-list__link" href="#/">Mobile</a></li>
-          </ul>
-        </li>
-        <li class="main-list__button">
-          <a class="main-list__link" href="#/">News</a>
-          <ul class="main-list__drop-menu">
-            <li class="main-list__button main-list__button_inside"><a class="main-list__link" href="#/">Blog</a></li>
-            <li class="main-list__button main-list__button_inside"><a class="main-list__link" href="#/">Trends</a></li>
-          </ul>
-        </li>
+  <header class="header">
+    
 
-        <li class="main-list__button">
-          <a class="main-list__link" href="./contacts.html">Contacts</a>
-          <ul class="main-list__drop-menu">
-            <li class="main-list__button main-list__button_inside js-btn-form"><a class="main-list__link" href="#/">Write us</a></li>
-          </ul>
-        </li>
-
-        <li class="main-list__button">
-          <a class="main-list__link" href="./login.html">Log in</a>
-          <ul class="main-list__drop-menu">
-            <li class="main-list__button main-list__button_inside"><a class="main-list__link" href="./sign-up.html">Sign Up</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-
-    <div id="wrapper" class="skewed">
-      <div class="layer bottom">
-        <div class="content-wrap">
-          <div class="content-body content-body_bottom">
-            <h2 class="content-body__heading content-body__heading_orange">New Sound</h2>
-            <p class="content-body__description">
-              In addition to the promotional single Marvins Room, Headlines, Make Me Proud, The Motto and Take Care were extracted as singles.
-              In his debut week, he came in first place on the Billboard 200 with 631,000 copies sold in just seven days
-            </p>
+    <div class="slideshow-container slideshow-container_orange">
+        <nav class="main-nav">
+            <ul class="main-list">
+              <li class="main-list__button main-list__button_logo main-list__button_beat">
+                <a class="main-list__link main-list__link_beat" href="#" >
+                  <div class="main-list__link_scale"></div>
+                  <div class="main-list__link_scale"></div>
+                  <div class="main-list__link_scale"></div>
+                  <img class="main-list__logo" src="./assets/images/Logo.png" alt="">
+                </a>
+              </li>
+              <li class="main-list__button">
+                <a class="main-list__link" href="./library.html">Library</a>
+                <ul class="main-list__drop-menu">
+                  <li class="main-list__button main-list__button_inside js-btn-top-picks"><a class="main-list__link" href="#/">Top Picks</a></li>
+                </ul>
+              </li>
+              <li class="main-list__button">
+                <a class="main-list__link js-btn-subscriptions" href="#/">Subscriptions</a>
+                <ul class="main-list__drop-menu">
+                  <li class="main-list__button main-list__button_inside js-btn-about-us"><a class="main-list__link" href="#/">About Us</a></li>
+                  <li class="main-list__button main-list__button_inside js-btn-reviews"><a class="main-list__link" href="#/">Reviews</a></li>
+                  <li class="main-list__button main-list__button_inside js-btn-steps"><a class="main-list__link" href="#/">Mobile</a></li>
+                </ul>
+              </li>
+              <li class="main-list__button">
+                <a class="main-list__link" href="#/">News</a>
+                <ul class="main-list__drop-menu">
+                  <li class="main-list__button main-list__button_inside"><a class="main-list__link" href="#/">Blog</a></li>
+                  <li class="main-list__button main-list__button_inside"><a class="main-list__link" href="#/">Trends</a></li>
+                </ul>
+              </li>
+      
+              <li class="main-list__button">
+                <a class="main-list__link" href="./contacts.html">Contacts</a>
+                <ul class="main-list__drop-menu">
+                  <li class="main-list__button main-list__button_inside js-btn-form"><a class="main-list__link" href="#/">Write us</a></li>
+                </ul>
+              </li>
+      
+              <li class="main-list__button">
+                <a class="main-list__link" href="./login.html">Log in</a>
+                <ul class="main-list__drop-menu">
+                  <li class="main-list__button main-list__button_inside"><a class="main-list__link" href="./sign-up.html">Sign Up</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+      <div class="slide slide_hero slide_hero-1 js-slide-1">
+        <div class="hero-container">
+          <h2 class="hero-container__heading">Music for everyone.</h2>
+          <div class="btn-container">
+            <a class="btn btn-ghost btn-ghost_hero" href="#/">Get Newsic Free</a>
+            <a class="btn btn-full btn-full_hero" href="#/">Get Newsic Premium</a>
           </div>
-          <div class="content-hidden content-hidden_bottom">
-            <ol>
-              <li class="track-list__track" value="9">Tuscan Leather</li>
-              <li class="track-list__track">Furthest Thing</li>
-              <li class="track-list__track">Started from the Bottom</li>
-              <li class="track-list__track">Wu-Tang Forever</li>
-              <li class="track-list__track">Own It</li>
-              <li class="track-list__track">Worst Behavior</li>
-              <li class="track-list__track">From Time feat. Jhené Aiko</li>
-              <li class="track-list__track">Hold On, We're Going Home feat. Majid Jordan</li>
-            </ol>
-          </div>
-
-          <h3 hre class="album-title album-title_bottom">Nothing was the same</h3>
-          <img class="layer__image" src="./assets/images/Drake-1.jpg" alt="">
         </div>
       </div>
-
-      <div class="layer top">
-        <div class="content-wrap content-wrap_top">
-          <div class="content-body content-body_top">
-            <h2 class="content-body__heading">New Album</h2>
-            <p class="content-body__description">
-              Nothing was the same comes two years after the last album by Drake, Take Care that included, inside, prestigious collaborations
-              such as The Weeknd, Lil 'Wayne, Nicki Minaj, Rihanna, André 3000 and Stevie Wonder.
-            </p>
+      <div class="slide slide_hero slide_hero-2 js-slide-1">
+        <div class="hero-container">
+          <h2 class="hero-container__heading">Premium for your whole family.Just $19.</h2>
+          <div class="btn-container">
+            <a class="btn btn-full btn-full_hero" href="#/">Learn More</a>
           </div>
-          <div class="content-hidden content-hidden_top">
-            <ol class="track-list">
-              <li class="track-list__track">Connect</li>
-              <li class="track-list__track">The Language</li>
-              <li class="track-list__track">305 to My City feat. Detail</li>
-              <li class="track-list__track">Too Much</li>
-              <li class="track-list__track">Pound Cake / Paris Morton Music 2 feat. JAY Z</li>
-              <li class="track-list__track">Come Thru</li>
-              <li class="track-list__track">All Me feat. Big Sean and 2 Chainz</li>
-              <li class="track-list__track">The Motion feat. Sampha</li>
-            </ol>
-          </div>
-
-          <h3 class="album-title album-title_top"><a href="./player.html">Nothing was the same</a></h3>
-          <img class="layer__image" src="./assets/images/Drake-2.jpg" alt="">
         </div>
       </div>
-
-      <div class="handle"></div>
+      <div class="slide slide_hero slide_hero-3 js-slide-1">
+        <div class="hero-container">
+          <h2 class="hero-container__heading">Premium for Students, now with Hulu. Only $5/month.</h2>
+          <div class="btn-container">
+            <a class="btn btn-full btn-full_hero" href="#/">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide_hero slide_hero-4 js-slide-1">
+        <div class="hero-container">
+          <h2 class="hero-container__heading">Play Spotify on PlayStation® and on Xbox® One.</h2>
+          <div class="btn-container">
+            <a class="btn btn-full btn-full_hero" href="#/">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <a class="prev js-prev-1" >&#10094;</a>
+      <a class="next js-next-1" >&#10095;</a>
     </div>
+      
   </header>
+  </section>
 
   <section class="features-section js-section-about-us">
     <h2 class="section-heading">Music listening. Reinvented.</h2>
@@ -221,11 +207,72 @@
 
   </section>
 
+  <section class="section-day-choice">
+    <h2 class="section-heading">Feature of the day</h2>
+    <div id="wrapper" class="skewed">
+          <div class="layer bottom">
+            <div class="content-wrap">
+              <div class="content-body content-body_bottom">
+                <h2 class="content-body__heading content-body__heading_orange">New Sound</h2>
+                <p class="content-body__description">
+                  In addition to the promotional single Marvins Room, Headlines, Make Me Proud, The Motto and Take Care were extracted as singles.
+                  In his debut week, he came in first place on the Billboard 200 with 631,000 copies sold in just seven days
+                </p>
+              </div>
+              <div class="content-hidden content-hidden_bottom">
+                <ol>
+                  <li class="track-list__track" value="9">Tuscan Leather</li>
+                  <li class="track-list__track">Furthest Thing</li>
+                  <li class="track-list__track">Started from the Bottom</li>
+                  <li class="track-list__track">Wu-Tang Forever</li>
+                  <li class="track-list__track">Own It</li>
+                  <li class="track-list__track">Worst Behavior</li>
+                  <li class="track-list__track">From Time feat. Jhené Aiko</li>
+                  <li class="track-list__track">Hold On, We're Going Home feat. Majid Jordan</li>
+                </ol>
+              </div>
+    
+              <h3 hre class="album-title album-title_bottom">Nothing was the same</h3>
+              <img class="layer__image js-image" src="./assets/images/Drake-1.jpg" alt="">
+            </div>
+          </div>
+    
+          <div class="layer top">
+            <div class="content-wrap content-wrap_top">
+              <div class="content-body content-body_top">
+                <h2 class="content-body__heading">New Album</h2>
+                <p class="content-body__description">
+                  Nothing was the same comes two years after the last album by Drake, Take Care that included, inside, prestigious collaborations
+                  such as The Weeknd, Lil 'Wayne, Nicki Minaj, Rihanna, André 3000 and Stevie Wonder.
+                </p>
+              </div>
+              <div class="content-hidden content-hidden_top">
+                <ol class="track-list">
+                  <li class="track-list__track">Connect</li>
+                  <li class="track-list__track">The Language</li>
+                  <li class="track-list__track">305 to My City feat. Detail</li>
+                  <li class="track-list__track">Too Much</li>
+                  <li class="track-list__track">Pound Cake / Paris Morton Music 2 feat. JAY Z</li>
+                  <li class="track-list__track">Come Thru</li>
+                  <li class="track-list__track">All Me feat. Big Sean and 2 Chainz</li>
+                  <li class="track-list__track">The Motion feat. Sampha</li>
+                </ol>
+              </div>
+    
+              <h3 class="album-title album-title_top"><a href="./player.html">Nothing was the same</a></h3>
+              <img class="layer__image js-image" src="./assets/images/Drake-2.jpg" alt="">
+            </div>
+          </div>
+    
+          <div class="handle"></div>
+        </div>
+  </section>
+
   <section class="review-section js-section-reviews">
     <h2 class="section-heading">Join the thousands who are already here</h2>
 
     <div class="slideshow-container">
-      <div class="slide fade">
+      <div class="slide js-slide-2">
         <div class="feature-container">
           <div class="feature feature_less-padding">
             <blockquote class="feature__quote">
@@ -257,7 +304,7 @@
         </div>
       </div>
 
-      <div class="slide fade">
+      <div class="slide js-slide-2">
         <div class="feature-container">
           <div class="feature feature_less-padding">
             <blockquote class="feature__quote">
@@ -289,14 +336,14 @@
         </div>
       </div>
 
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev js-prev-2" >&#10094;</a>
+      <a class="next js-next-2" >&#10095;</a>
     </div>
     
   </section>
 
   <section class="section-steps js-section-steps">
-    <h2 class="section-heading">the finest interface</h2>
+    <h2 class="section-heading">it's easy</h2>
     
     <div class="feature-container">
       <div class="feature feature_less-padding shadow">
@@ -306,15 +353,15 @@
       <div class="feature">
         <div class="works-step">
           <div class="works-step__step-num">1</div>
-          <p class="works-step__description">Choose the subscription plan that best fits your needs and sign up today.</p>
+          <p class="works-step__description">Know what you want to listen to? Just search and hit play.</p>
         </div>
         <div class="works-step">
           <div class="works-step__step-num">2</div>
-          <p class="works-step__description">Download our app and find everything you desire. Unlimited streaming</p>
+          <p class="works-step__description">Check out the latest charts, brand new releases and great playlists for right now.</p>
         </div>
         <div class="works-step">
           <div class="works-step__step-num">3</div>
-          <p class="works-step__description">Enjoy your music after every day. See you the next time!</p>
+          <p class="works-step__description">Enjoy new music every Monday with your own personal playlist. Or sit back and enjoy Radio.</p>
         </div>
     
         <a class="btn-app" href="#/">
@@ -330,7 +377,7 @@
   </section>
 
   <section class="section-plans js-section-subscriptions">
-    <h2 class="section-heading">Start your journey today</h2>
+    <h2 class="section-heading">Go get the music</h2>
     
     <div class="plan-container">
       <div class="plan-box">
@@ -360,10 +407,10 @@
       <div class="plan-box">
         <div class="box">
           <h3 class="box__heading">Family</h3>
-          <p class="box__plan-price">$39/
+          <p class="box__plan-price">$19/
             <span class="box__plan-price_small">month</span>
           </p>
-          <p class="box__price-meal">Less than $10 per member</p>
+          <p class="box__price-meal">Less than $5 per member</p>
         </div>
         <div class="box">
           <ul class="advantage-list">
@@ -490,8 +537,11 @@
     <p class="footer__info">Copyright &copy; 2018 by NEWSIC</p>
   </footer>
 
-  <script src="./slider.js"></script>
-  <script src="scroller.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/slider-index.js"></script>
+  <script src="./assets/js/scroller.js"></script>
+  <script src="./assets/js/scroller-events-index.js"></script>
+  <script src="./assets/js/box-animation.js"></script>
 </body>
 
 </html>

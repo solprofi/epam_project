@@ -70,6 +70,7 @@
 
     &__description {
         flex-basis: 85%;
+        margin-top: 20px;
     }
 }
 
