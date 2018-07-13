@@ -1,42 +1,42 @@
-.intro-box {
+.contacts-header {
+    position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../images/contacts-bg.jpeg');
     background-size: cover;
     background-attachment: fixed;
-    height: 70vh;
-    position: relative;
+    background-position: center;
 
-    &__heading {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color:  #EB7F00;
-        font-size: 3.5rem;
-        text-transform: uppercase;
-        margin: 0;
+    height: 35vh;
+
+    @mixin atSmall {
+        height: 50vh;
     }
 
-    &__heading_small {
-        font-size: 2.5rem;
+    @mixin atMedium {
+        height: 60vh;
     }
 
-    &__heading_dark {
-        color: #555;
+    @mixin atLarge {
+        height: 80vh;
     }
 }
-
 
 .contacts-heading {
     text-align: center;
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     margin: 0;
-    padding: 30px 0 0 0;
+    padding: 20px 0 0 0;
     color: #555;
     font-weight: 300;
     word-spacing: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+
+    @mixin atSmall {
+        font-size: 2.5rem;
+        padding: 30px 0 0 0;
+        margin-bottom: 30px;
+    }
 }
 
 .list-container {

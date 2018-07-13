@@ -1,3 +1,6 @@
 .section-jobs {
-    
+  margin: 30px 0;
+  @mixin atSmall {
+    margin-top: 0;
+  }
 }

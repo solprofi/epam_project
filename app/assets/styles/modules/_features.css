@@ -49,6 +49,23 @@
         border-radius: 5px;
     }
 
+    &__image_contacts {
+        max-width: 100%;
+        border-radius: 0;
+        @mixin atSmall {
+            max-width: 400px;
+            border-radius: 5px;
+        }
+
+        @mixin atMedium {
+            max-width: 90%;
+        }
+
+        @mixin atLarge {
+            max-width: 300px;
+        }
+    }
+
     &__heading {
         color: black;
         text-transform: uppercase;

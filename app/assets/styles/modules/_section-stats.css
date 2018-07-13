@@ -18,8 +18,15 @@
         color:  #EB7F00;
         text-transform: uppercase;
         font-family: 'WireOne';
-        font-size: 4.5rem;
+        font-size: 2rem;
         margin: 10px 0;
+
+        @mixin atSmall {
+            font-size: 3.5rem;
+        }
+        @mixin atMedium {
+            font-size: 3.5rem;
+        }
     }
     
 }

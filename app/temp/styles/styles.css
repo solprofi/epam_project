@@ -595,7 +595,12 @@ input[type=submit]:active {
           transform: translate(-50%,-50%);
   text-align: center;
   width: 100%;
+
 }
+
+.hero-container_contacts {
+    top: 55%;
+  }
 
 .hero-container__heading {
     font-size: 2rem;
@@ -627,6 +632,10 @@ input[type=submit]:active {
       font-size: 4.5rem
   }
     }
+
+.hero-container__heading_contacts {
+    color:  #EB7F00;
+  }
 
 .btn-container {
   display: -webkit-box;
@@ -757,6 +766,33 @@ a {
 .feature__image {
         max-width: 300px;
         border-radius: 5px;
+    }
+
+.feature__image_contacts {
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+@media (min-width: 480px) {
+
+.feature__image_contacts {
+            max-width: 400px;
+            border-radius: 5px
+    }
+    }
+
+@media (min-width: 768px) {
+
+.feature__image_contacts {
+            max-width: 90%
+    }
+    }
+
+@media (min-width: 1024px) {
+
+.feature__image_contacts {
+            max-width: 300px
+    }
     }
 
 .feature__heading {
@@ -1098,9 +1134,8 @@ a {
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
-        padding-bottom: 10px;
         text-align: center;
-        font-size: .9rem;
+        font-size: .8rem;
         font-weight: 300;
         -webkit-transition: all .5s;
         transition: all .5s;
@@ -1108,10 +1143,10 @@ a {
         border-right: 1px solid rgb(213, 213, 213);
     }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
 
 .main-list__button {
-            padding-top: 20px
+            font-size: .9rem
     }
     }
 
@@ -1120,6 +1155,10 @@ a {
 .main-list__button {
             font-size: 1rem
     }
+    }
+
+.main-list__button_contacts {
+        background: rgba(238, 238, 238, 0.8);
     }
 
 .main-list__button:nth-child(1) {
@@ -1151,7 +1190,6 @@ a {
         display: none;
         border-right: 1px solid transparent;
         border-left: 1px solid transparent;
-        padding: 10px 0 !important;
     }
 
 @media (min-width: 480px) {
@@ -1179,6 +1217,11 @@ a {
         color: black;
         display: inline-block;
         width: 100%;
+        padding: 15px 0;
+    }
+
+.main-list__link_beat {
+        padding: 0;
     }
 
 .main-list__drop-menu {
@@ -2019,6 +2062,17 @@ a {
 }
     }
 
+.section-jobs {
+  margin: 30px 0;
+}
+
+@media (min-width: 480px) {
+
+.section-jobs {
+    margin-top: 0
+}
+    }
+
 .section-form {
     padding-bottom: 75px;
 }
@@ -2362,47 +2416,59 @@ textarea {
   border-radius: 3px 0 0 3px;
 }
 
-.intro-box {
+.contacts-header {
+    position: relative;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8))), url('../images/contacts-bg.jpeg');
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../images/contacts-bg.jpeg');
     background-size: cover;
     background-attachment: fixed;
-    height: 70vh;
-    position: relative;
+    background-position: center;
+
+    height: 35vh;
 }
 
-.intro-box__heading {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-        color:  #EB7F00;
-        font-size: 3.5rem;
-        text-transform: uppercase;
-        margin: 0;
+@media (min-width: 480px) {
+
+.contacts-header {
+        height: 50vh
+}
     }
 
-.intro-box__heading_small {
-        font-size: 2.5rem;
+@media (min-width: 768px) {
+
+.contacts-header {
+        height: 60vh
+}
     }
 
-.intro-box__heading_dark {
-        color: #555;
+@media (min-width: 1024px) {
+
+.contacts-header {
+        height: 80vh
+}
     }
 
 .contacts-heading {
     text-align: center;
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     margin: 0;
-    padding: 30px 0 0 0;
+    padding: 20px 0 0 0;
     color: #555;
     font-weight: 300;
     word-spacing: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
+
+@media (min-width: 480px) {
+
+.contacts-heading {
+        font-size: 2.5rem;
+        padding: 30px 0 0 0;
+        margin-bottom: 30px
+}
+    }
 
 .list-container {
 
@@ -2451,8 +2517,22 @@ textarea {
         color:  #EB7F00;
         text-transform: uppercase;
         font-family: 'WireOne';
-        font-size: 4.5rem;
+        font-size: 2rem;
         margin: 10px 0;
+    }
+
+@media (min-width: 480px) {
+
+.stat__heading {
+            font-size: 3.5rem
+    }
+    }
+
+@media (min-width: 768px) {
+
+.stat__heading {
+            font-size: 3.5rem
+    }
     }
 
 .section-world {
