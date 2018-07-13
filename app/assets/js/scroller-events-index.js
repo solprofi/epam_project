@@ -3,7 +3,7 @@ document.querySelector('.js-btn-subscriptions').addEventListener('click', () => 
   scrollIt(
       document.querySelector('.js-section-subscriptions'),
       800,
-      'easeOutQuad',
+      'linear',
       () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
   );
 });

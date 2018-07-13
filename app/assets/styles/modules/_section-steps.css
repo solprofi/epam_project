@@ -27,9 +27,12 @@
     }
 
     &_active {
-        margin-top: -10px;
-        box-shadow: 5px 5px 15px rgb(240, 240, 240), -5px -5px 15px rgb(240, 240, 240);
-        transform: scale(1.01);
+
+        @mixin atMedium {
+            margin-top: -10px;
+            box-shadow: 5px 5px 15px rgb(240, 240, 240), -5px -5px 15px rgb(240, 240, 240);
+        }
+        
     }
 }
 

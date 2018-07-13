@@ -20,7 +20,7 @@
     border-radius: 5px;
     width: 100%;
     box-shadow: 2px 2px 5px #dadada, -2px 2px 5px #dadada;
-    transition: all .5s;
+    transition: all .3s;
 
     @mixin atSmall {
         width: 60%;
@@ -34,8 +34,10 @@
     }
 
     &_active {
-        margin-top: -10px;
-        box-shadow: 3px 3px 25px #dadada, -3px 3px 25px #dadada;
+        @mixin atMedium {
+            margin-top: -10px;
+            box-shadow: 3px 3px 25px #dadada, -3px 3px 25px #dadada;
+        }
     }
 }
 
@@ -44,6 +46,7 @@
     padding: 15px;
     border-bottom: 1px solid #e8e8e8;
     text-align: left;
+
     &__heading {
         font-weight: 300;
         font-size: 2rem;

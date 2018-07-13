@@ -7,7 +7,7 @@
 .gallery {
     display: grid;
     grid-template-columns: repeat(1, 300px);
-    grid-template-rows: repeat(8, 300px);
+    grid-template-rows: repeat(4, 300px);
     grid-gap: 5px;
     margin: 0 auto;
     justify-content: center;
@@ -53,6 +53,13 @@
     @mixin at2 {
         position: initial;
     }
+    &_mobile-hidden {
+        display: none;
+
+        @mixin at2 {
+            display: initial;
+        }
+    }
     
     &_hidden {
         display: none;
@@ -65,6 +72,8 @@
             display: none;
         }
     }
+
+   
 
 
 }

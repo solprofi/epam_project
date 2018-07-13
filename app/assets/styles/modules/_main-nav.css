@@ -1,44 +1,63 @@
 /* TOP NAVIGATION */
-
-.main-nav {
-}
-
 .main-list {
     position: relative;
     margin: 0;
-    display: flex;
     padding: 0;
     list-style: none;
     justify-content: space-between;
+    transition: all 1s;
+    display: none;
+    @mixin atSmall {
+        display: flex;
+    }
+
+    &_mobile {
+        display: block;
+    }
+
+
     &__logo {
-        max-width: 45px;
         margin-top: 10px;
+        max-width: 40px;
     }
     &__button {
         position: relative;
-        display: inline-block;
         background: rgba(238, 238, 238, 0.445);
         flex: 1;
-        padding-top: 20px;
+        padding-bottom: 10px;
         text-align: center;
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: 300;
         transition: all .5s;
         z-index: 999;
         border-right: 1px solid rgb(213, 213, 213);
+
+        @mixin atSmall {
+            padding-top: 20px;
+        }
+        @mixin atLarge {
+            font-size: 1rem;
+        }
     }
+
     &__button:nth-child(1) {
-        padding-top: 0;
+        margin-top: 0;
+        padding: 0;
     }
+
     &__button:last-child {
         border-right: none;
     }
     &__button:hover {
-        background: rgb(201, 201, 201);
+        @mixin atSmall {
+            background: rgb(201, 201, 201);
+        }
     }
     &__button:hover &__button_inside {
-        display: block;
-        box-shadow: 1px 1px 1px rgb(201, 201, 201), -1px 1px 1px rgb(201, 201, 201);
+        @mixin atSmall {
+            display: block;
+            box-shadow: 1px 1px 1px rgb(201, 201, 201), -1px 1px 1px rgb(201, 201, 201);
+        }
     }
     &__button_inside {
         display: none;
@@ -47,14 +66,18 @@
         padding: 10px 0 !important;
     }
     &__button_inside:hover {
-        background: rgb(175, 175, 175);
+        @mixin atSmall {
+            background: rgb(175, 175, 175);    
+        }
     }
     &__button_inside:last-child {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
     &__button_logo:hover {
-        background: rgb(238, 238, 238);
+        @mixin atSmall {
+            background: rgb(238, 238, 238);
+        }
     }
     &__link {
         text-decoration: none;
@@ -63,49 +86,6 @@
         display: inline-block;
         width: 100%;
     }
-
-    /* Equilizer */
-    &__link_beat:before, 
-    &__link_beat:after,
-    &__link_beat div {
-        content: '';
-        height: 6px;
-        background-color: rgb(255, 155, 40);
-        position: absolute;
-        right: 60%;
-        width: 0;
-    }
-    &__link_beat:before {
-        top: 10px;
-    }
-    &__link_scale:nth-of-type(1) {
-        top: 20px;
-    }
-    &__link_scale:nth-of-type(2) {
-        top: 30px;
-    }
-    &__link_scale:nth-of-type(3) {
-        top: 40px;
-    }
-    &__link_beat:after {
-        top: 50px;
-    }
-    &__link_beat:hover:before {
-        animation: bar1 0.8s infinite;
-    }
-    &__link_beat:hover>&__link_scale:nth-of-type(1) {
-        animation: bar2 0.8s infinite;
-    }
-    &__link_beat:hover>&__link_scale:nth-of-type(2) {
-        animation: bar3 0.8s infinite;
-    }
-    &__link_beat:hover>&__link_scale:nth-of-type(3) {
-        animation: bar1 0.8s infinite;
-    }
-    &__link_beat:hover:after {
-        animation: bar4 0.8s infinite;
-    }
-
     &__drop-menu {
         position: absolute;
         top: 100%;
@@ -113,113 +93,254 @@
         padding: 0;
         margin: 0;
         list-style: none;
+
+        display: none;
+
+        @mixin atSmall {
+            display: block;
+        }
     }
+
+    /* Equilizer */
+    &__link_beat:before, 
+    &__link_beat:after,
+    &__link_beat &__link_scale {
+        display: none;
+        @mixin atMedium {
+            left: 0;
+            display: initial;
+            content: '';
+            background: linear-gradient(rgb(255, 155, 40), rgb(255, 200, 137)) ;
+            position: absolute;
+            width: 6px;
+            height: 0px;
+            z-index: -1;
+        }
+
+        @mixin atLarge {
+            width: 9px;
+        }
+       
+    }
+
+    &__link_beat:before {
+        @mixin atMedium {
+            left: 12%;
+        }
+        @mixin atLarge {
+            left: 20%;
+        }
+    }
+    &__link_scale:nth-of-type(1) {
+         @mixin atMedium {
+            left: 19%;
+         }
+         @mixin atLarge {
+             left: 25%;
+         }
+    }
+    &__link_scale:nth-of-type(2) {
+         @mixin atMedium {
+            left: 26%;
+         }
+         @mixin atLarge {
+             left: 30%;
+         }
+    }
+    &__link_scale:nth-of-type(3) {
+         @mixin atMedium {
+            left: 33%;
+         }
+         @mixin atLarge {
+             left:36%;
+         }
+    }
+    &__link_scale:nth-of-type(4) {
+         @mixin atMedium {
+            left: 40%;
+         }
+         @mixin atLarge {
+             left: 41%;
+         }
+    }
+    &__link_scale:nth-of-type(5) {
+         @mixin atMedium {
+            left: 47%;
+         }
+         @mixin atLarge {
+             left: 47%;
+         }
+    }
+
+    &__link_scale:nth-of-type(6) {
+         @mixin atMedium {
+            left: 54%;
+         }
+         @mixin atLarge {
+             left: 52%;
+         }
+    }
+    &__link_scale:nth-of-type(7) {
+         @mixin atMedium {
+            left: 61%;
+         }
+         @mixin atLarge {
+             left: 58%;
+         }
+    }
+
+    &__link_scale:nth-of-type(8) {
+         @mixin atMedium {
+            left: 68%;
+         }
+         @mixin atLarge {
+             left: 63%;
+         }
+    }
+    &__link_scale:nth-of-type(9) {
+         @mixin atMedium {
+            left: 75%;
+         }
+         @mixin atLarge {
+             left: 69%;
+         }
+    }
+    &__link_beat:after {
+         @mixin atMedium {
+            left: 83%;
+         }
+         @mixin atLarge {
+             left: 75%;
+         }
+    }
+    &__link_beat:hover:before,
+    &__link_beat:hover>&__link_scale:nth-of-type(4),
+    &__link_beat:hover>&__link_scale:nth-of-type(7),
+    &__link_beat:hover>&__link_scale:nth-of-type(3) {
+        animation: bar1 0.8s infinite;
+    }
+    &__link_beat:hover>&__link_scale:nth-of-type(1),
+    &__link_beat:hover>&__link_scale:nth-of-type(6),
+    &__link_beat:hover>&__link_scale:nth-of-type(8)  {
+        animation: bar2 0.8s infinite;
+    }
+    &__link_beat:hover>&__link_scale:nth-of-type(2),
+    &__link_beat:hover>&__link_scale:nth-of-type(5)  {
+        animation: bar3 0.8s infinite;
+    }
+
+    &__link_beat:hover:after,
+    &__link_beat:hover>&__link_scale:nth-of-type(9) {
+        animation: bar4 0.8s infinite;
+    }
+
+    
 }
 
 @keyframes bar1 {
     0% {
-        width: 10px;
+        height: 10px;
     }
     5% {
-        width: 5px;
+        height: 5px;
     }
     16% {
-        width: 25px;
+        height: 25px;
     }
     32% {
-        width: 18px;
+        height: 18px;
     }
     50% {
-        width: 28px;
+        height: 28px;
     }
     66% {
-        width: 50px;
+        height: 50px;
     }
     73% {
-        width: 45px;
+        height: 45px;
     }
     100% {
-        width: 10px;
+        height: 10px;
     }
 }
 
 @keyframes bar2 {
     0% {
-        width: 50px;
+        height: 50px;
     }
     5% {
-        width: 15px;
+        height: 15px;
     }
     16% {
-        width: 55px;
+        height: 55px;
     }
     32% {
-        width: 18px;
+        height: 18px;
     }
     50% {
-        width: 38px;
+        height: 38px;
     }
     66% {
-        width: 50px;
+        height: 50px;
     }
     73% {
-        width: 14px;
+        height: 14px;
     }
     100% {
-        width: 50px;
+        height: 50px;
     }
 }
 
 @keyframes bar3 {
     0% {
-        width: 0;
+        height: 0;
     }
     5% {
-        width: 35px;
+        height: 35px;
     }
     16% {
-        width: 15px;
+        height: 15px;
     }
     32% {
-        width: 25px;
+        height: 25px;
     }
     50% {
-        width: 5px;
+        height: 5px;
     }
     66% {
-        width: 20px;
+        height: 20px;
     }
     73% {
-        width: 10px;
+        height: 10px;
     }
     100% {
-        width: 30px;
+        height: 30px;
     }
 }
 
 @keyframes bar4 {
     0% {
-        width: 10px;
+        height: 10px;
     }
     5% {
-        width: 5px;
+        height: 5px;
     }
     16% {
-        width: 15px;
+        height: 15px;
     }
     32% {
-        width: 25px;
+        height: 25px;
     }
     50% {
-        width: 20px;
+        height: 20px;
     }
     66% {
-        width: 30px;
+        height: 30px;
     }
     73% {
-        width: 20px;
+        height: 20px;
     }
     100% {
-        width: 10px;
+        height: 10px;
     }
 }

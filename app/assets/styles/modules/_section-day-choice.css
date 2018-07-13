@@ -141,9 +141,6 @@
 		height: 116%;
 		transform-origin: top;
 	}
-  
-	
-
 }
 
 .content-hidden {
@@ -160,7 +157,6 @@
       color: white;
   }
 }
-
 
 .album-title {
 	position: absolute;
