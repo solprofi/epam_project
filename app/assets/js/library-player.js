@@ -254,16 +254,19 @@ let albumSelected;
 let isPrevAlbumSelected = false;
 let prevAlbum;
 let prevSong = 0; //previous selected song
+let songPlayed = false;
 let song = new Audio();
 let currentSong = 0;    // it point to the current song
 
 trackBox.style.display = 'none';
 
 function pickSong(i) {
+  if (!songPlayed)
+    songPlayed = true;
   currentSong = i;
   updateListAppearance(i);
   playSong();
-  
+
   changeImgToPause();
 }
 
@@ -285,12 +288,11 @@ function updateListAppearance(i) {
 function playSong() {
   song.src = songs[albumSelected][currentSong];  //set the source of 0th song 
   songTitle.textContent = trackLists[albumSelected][currentSong]; // set the title of song
-   song.play();
+  song.play();
 }
 
 function changeImgToPause() {
   document.querySelector('.js-play-btn-img').setAttribute('src', './assets/images/Pause.png');
-  
 }
 
 function changeImgToPlay() {
@@ -299,7 +301,7 @@ function changeImgToPlay() {
 
 function playOrPauseSong() {
 
-  if(!isPrevAlbumSelected)
+  if (!isPrevAlbumSelected || !songPlayed)
     return;
   if (song.paused) {
     song.play();
@@ -361,21 +363,23 @@ let albumList = document.getElementsByClassName('gallery__image');
 albumList = Array.prototype.slice.call(albumList);
 for (let i = 0; i < albumList.length; i++) {
   albumList[i].addEventListener('click', function () {
+    document.querySelector('.library').classList.add('library_mobile');
+    songPlayed = false;
     song.pause();
     changeImgToPlay();
     albumSelected = i;
     let playerBg = document.querySelector('.floating-player-col');
-    playerBg.style.backgroundImage = `url('temp/images/${i+1}.jpg')`;
+    playerBg.style.backgroundImage = `url('temp/images/${i + 1}.jpg')`;
 
     trackBoxHeading.innerText = headings[i];
-    let tracks =  trackLists[i].map( (el, index) => `<li class="track-list__track" onclick="pickSong(${index})">${el}</li>`)
+    let tracks = trackLists[i].map((el, index) => `<li class="track-list__track" onclick="pickSong(${index})">${el}</li>`)
     if (isPrevAlbumSelected) {
       trackList.innerHTML = '';
     } else {
       isPrevAlbumSelected = true;
       trackBox.style.display = 'block';
     }
-    for(let i = 0; i < tracks.length; i++) {
+    for (let i = 0; i < tracks.length; i++) {
       trackList.innerHTML += tracks[i];
     }
 

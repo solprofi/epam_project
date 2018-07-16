@@ -1,22 +1,18 @@
 .section-library {
     position: relative;
-    width: 100%;
     box-sizing: border-box;
     justify-content: space-evenly;
-    z-index: 0;
 
-    @mixin atSmall {
+    @mixin atMedium {
         display: flex;
     }
 }
 
 .library {
+    position: relative;
     flex-basis: 45%;
-
-    @mixin atMedium {
-        flex-basis: 65%;
-    }
     padding: 20px 0 50px 0;
+
 }
 
 .library-row {
@@ -34,4 +30,22 @@
 
 .list-container_flex {
     flex-basis: 50%;
+}
+
+.pageChange {
+    width: 50%;
+    margin: 20px auto 0 auto;
+    display: flex;
+
+    &__btn {
+        flex: 1;
+        border-radius: 5px;
+        padding: 5px 10px;
+        border: 1px solid #eee;
+    }
+
+    &__btn:hover {
+        background: #EB7F00;
+        border: 1px solid #EB7F00;
+    }
 }

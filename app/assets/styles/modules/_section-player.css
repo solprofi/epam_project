@@ -49,6 +49,9 @@
         word-spacing: 1px;
     }
 
+    &_more-margin-left {
+        margin-left: 15px;
+    }
 }
 
 .comment-box {
