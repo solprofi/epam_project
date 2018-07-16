@@ -8,27 +8,53 @@
     display: grid;
     grid-template-columns: repeat(1, 300px);
     grid-template-rows: repeat(4, 300px);
-    grid-gap: 5px;
+    
     margin: 0 auto;
     justify-content: center;
 
-    @mixin at2 {
-        grid-template-columns: repeat(2, 300px);
-        grid-template-rows: repeat(4, 300px);
-        grid-gap: 10px;
+
+    &_large {
+        grid-gap: 5px;
+        @mixin at2 {
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(4, 300px);
+            grid-gap: 10px;
+        }
+    
+        @mixin at3 {
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(3, 300px);
+            grid-gap: 20px;
+        }
+    
+        @mixin at4 {
+            grid-template-columns: repeat(4, 300px);
+            grid-template-rows: repeat(2, 300px);
+            grid-gap: 30px;
+        }
     }
 
-    @mixin at3 {
-        grid-template-columns: repeat(3, 300px);
-        grid-template-rows: repeat(3, 300px);
-        grid-gap: 20px;
+    &_small {
+        grid-gap: 5px;
+        @mixin at2 {
+            grid-template-columns: repeat(1, 330px);
+            grid-template-rows: repeat(4, 330px);
+            grid-gap: 5px;
+        }
+    
+        @mixin at3 {
+            grid-template-columns: repeat(2, 280px);
+            grid-template-rows: repeat(3, 280px);
+            grid-gap: 10px;
+        }
+    
+        @mixin at4 {
+            grid-template-columns: repeat(3, 280px);
+            grid-template-rows: repeat(4, 280px);
+            grid-gap: 15px;
+        }
     }
 
-    @mixin at4 {
-        grid-template-columns: repeat(4, 300px);
-        grid-template-rows: repeat(2, 300px);
-        grid-gap: 30px;
-    }
 }
 
 .gallery__image {
@@ -56,7 +82,7 @@
     &_mobile-hidden {
         display: none;
 
-        @mixin at2 {
+        @mixin at3 {
             display: initial;
         }
     }
@@ -73,27 +99,42 @@
         }
     }
 
-   
+    &:hover {
+        @mixin at2{
+            transform: scale(1.02);
+        }
+    
+        @mixin at3{
+            transform: scale(1.05);
+        }
+    
+        @mixin at4{
+            transform: scale(1.1);
+        }
+    }
 
-
+    &__button {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5px 12px;
+        text-transform: uppercase;
+        background: rgba(107, 107, 107, 0.548);
+        border: 1px solid #EB7F00;
+        border-radius: 5px;
+        opacity: 0;
+    }
 }
 
-.image-container:hover {
-    @mixin at2{
-        transform: scale(1.02);
-    }
 
-    @mixin at3{
-        transform: scale(1.05);
-    }
-
-    @mixin at4{
-        transform: scale(1.1);
-    }
-}
 
 .image-container:hover > .gallery__image {
     opacity: .3;
+}
+
+.image-container:hover > .image-container__button {
+    opacity: 1;
 }
 
 

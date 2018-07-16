@@ -11,70 +11,82 @@
 	 crossorigin="anonymous">
 	<link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="./temp/styles/styles.css" />
-	<script src="jquery-1.10.2.min.js"></script>
 </head>
 
 <body>
 	<header>
 		<nav class="main-nav">
+			<a href="#/" class="burger-nav"></a>
 			<ul class="main-list">
-				<li class="main-list__button">
-					<a class="main-list__link" href="./index.html">
+				<li class="main-list__button main-list__button_logo main-list__button_beat main-list__button_contacts">
+					<a class="main-list__link main-list__link_beat" href="./index.html">
+						<div class="main-list__link_scale"></div>
+						<div class="main-list__link_scale"></div>
+						<div class="main-list__link_scale"></div>
+						<div class="main-list__link_scale"></div>
+						<div class="main-list__link_scale"></div>
+						<div class="main-list__link_scale"></div>
+						<div class="main-list__link_scale"></div>
+						<div class="main-list__link_scale"></div>
+						<div class="main-list__link_scale"></div>
 						<img class="main-list__logo" src="./assets/images/Logo.png" alt="">
 					</a>
 				</li>
-				<li class="main-list__button">
-					<a class="main-list__link" href="#/">Library</a>
-					<ul class="dropmenu">
-						<li class="dropmenu-item">text</li>
-						<li class="dropmenu-item">text</li>
-						<li class="dropmenu-item">text</li>
-					</ul>
-				</li>
-				<li class="main-list__button">
+				<li class="main-list__button main-list__button_contacts">
 					<a class="main-list__link" href="#/">Subscriptions</a>
-					<ul class="dropmenu">
-						<li class="dropmenu-item">text</li>
-						<li class="dropmenu-item">text</li>
-						<li class="dropmenu-item">text</li>
-					</ul>
 				</li>
-				<li class="main-list__button">
+				<li class="main-list__button main-list__button_contacts">
 					<a class="main-list__link" href="#/">News</a>
-					<ul class="dropmenu">
-						<li class="dropmenu-item">text</li>
-						<li class="dropmenu-item">text</li>
-						<li class="dropmenu-item">text</li>
+					<ul class="main-list__drop-menu">
+						<li class="main-list__button main-list__button_inside main-list__button_contacts">
+							<a class="main-list__link" href="#/">Blog</a>
+						</li>
+						<li class="main-list__button main-list__button_inside main-list__button_contacts">
+							<a class="main-list__link" href="#/">Trends</a>
+						</li>
 					</ul>
 				</li>
 
-				<li class="main-list__button">
-					<a class="main-list__link" href="./contacts.html">Contacts</a>
+				<li class="main-list__button main-list__button_contacts">
+					<a class="main-list__link" href="#/">Contacts</a>
+					<ul class="main-list__drop-menu">
+						<li class="main-list__button main-list__button_inside main-list__button_contacts js-btn-map">
+							<a class="main-list__link" href="#/">Offices</a>
+						</li>
+						<li class="main-list__button main-list__button_inside main-list__button_contacts js-btn-social-media">
+							<a class="main-list__link" href="#/">Social media</a>
+						</li>
+					</ul>
 				</li>
 
-				<li class="main-list__button">
-					<a class="main-list__link" href="./login.html">Profile</a>
+				<li class="main-list__button main-list__button_contacts">
+					<a class="main-list__link" href="./login.html">Log in</a>
+					<ul class="main-list__drop-menu">
+						<li class="main-list__button main-list__button_inside main-list__button_contacts">
+							<a class="main-list__link" href="./sign-up.html">Sign Up</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</nav>
 
 	</header>
 
-	<h2 class="player-heading">Nothing was the same</h2>
+	<h2 class="player-heading">Kids See ghosts</h2>
 
 	<div class="section-player">
 
 		<div class="player-col">
 			<div class="player-wrapper">
 				<div class="player">
-					<div class="player__song-title" id="songTitle">Pick a song</div>
+					<div class="player__song-title js-song-title">Pick a song</div>
 
 					<div class="player-controls">
 						<button class="player-controls__btn  player-controls__btn_pre" id="pre" onclick="pre()">
 							<img class="player-controls__btn_centered" src="./assets/images/Pre.png" height="90%" width="90%" />
 						</button>
 						<button class="player-controls__btn" id="play" onclick="playOrPauseSong()">
-							<img class="player-controls__btn_centered" src="./assets/images/Play.png" />
+							<img class="player-controls__btn_centered js-play-btn-img" src="./assets/images/Play.png" />
 						</button>
 						<button class="player-controls__btn player-controls__btn_next" id="next" onclick="next()">
 							<img class="player-controls__btn_centered " src="./assets/images/Next.png" height="90%" width="90%" />
@@ -92,14 +104,13 @@
 		<div class="list-col">
 			<h2 class="list-col__heading">Track-list</h2>
 			<ol class="track-list">
-				<li class="track-list__track" onclick="pickSong(0)">Tuscan Leather</li>
-				<li class="track-list__track" onclick="pickSong(1)">Furthest Thing</li>
-				<li class="track-list__track" onclick="pickSong(2)">Started from the Bottom</li>
-				<li class="track-list__track" onclick="pickSong(3)">Wu-Tang Forever</li>
-				<li class="track-list__track" onclick="pickSong(4)">Own It</li>
-				<li class="track-list__track" onclick="pickSong(5)">Worst Behavior</li>
-				<li class="track-list__track" onclick="pickSong(6)">From Time feat. Jhené Aiko</li>
-				<li class="track-list__track" onclick="pickSong(7)">Hold On, We're Going Home feat. Majid Jordan</li>
+				<li class="track-list__track" onclick="pickSong(0)">Feel the Love</li>
+				<li class="track-list__track" onclick="pickSong(1)">Kids See Ghosts</li>
+				<li class="track-list__track" onclick="pickSong(2)">4th Dimension</li>
+				<li class="track-list__track" onclick="pickSong(3)">Untitled</li>
+				<li class="track-list__track" onclick="pickSong(4)">Kudi's Montage</li>
+				<li class="track-list__track" onclick="pickSong(5)">Devil's Watch</li>
+				<li class="track-list__track" onclick="pickSong(6)">Reborn</li>
 			</ol>
 		</div>
 
@@ -113,6 +124,67 @@
 			</p>
 		</div>
 
+	</div>
+
+	<div class="section-comments">
+		<div class="list-col">
+			<h2 class="list-col__heading">Comments(5)</h2>
+		</div>
+
+		<div class="comment-box">
+			<div class="comment-profile">
+				<img class="comment-profile__image" src="./assets/images/customer-1.jpg" alt="">
+				<div class="comment-profile__name">Alan R.</div>
+				<div class="comment-profile__info">Last seen yesterday
+					<br> Karma: 3000</div>
+			</div>
+			<div class="comment-box__comment">Nothing Was the Same received generally positive reviews from critics.Nothing Was the Same received generally positive
+				reviews from critics.Nothing Was the Same received generally positive reviews from critics.Nothing Was the Same received
+				generally positive reviews from critics.</div>
+		</div>
+		<div class="comment-box">
+			<div class="comment-profile">
+				<img class="comment-profile__image" src="./assets/images/customer-2.jpg" alt="">
+				<div class="comment-profile__name">Alan R.</div>
+				<div class="comment-profile__info">Last seen yesterday
+					<br> Karma: 3000</div>
+			</div>
+			<div class="comment-box__comment">Nothing Was the Same received generally positive reviews from critics.Nothing Was the Same received generally positive
+				reviews from critics.Nothing Was the Same received generally positive reviews from critics.Nothing Was the Same received
+				generally positive reviews from critics.</div>
+		</div>
+		<div class="comment-box">
+			<div class="comment-profile">
+				<img class="comment-profile__image" src="./assets/images/customer-3.jpg" alt="">
+				<div class="comment-profile__name">Lucy K.</div>
+				<div class="comment-profile__info">Last seen yesterday
+					<br> Karma: 3000</div>
+			</div>
+			<div class="comment-box__comment">Nothing Was the Same received generally positive reviews from critics.Nothing Was the Same received generally positive
+				reviews from critics.Nothing Was the Same received generally positive reviews from critics.Nothing Was the Same received
+				generally positive reviews from critics.</div>
+		</div>
+		<div class="comment-box">
+			<div class="comment-profile">
+				<img class="comment-profile__image" src="./assets/images/customer-4.jpg" alt="">
+				<div class="comment-profile__name">Robert D.</div>
+				<div class="comment-profile__info">Last seen yesterday
+					<br> Karma: 3000</div>
+			</div>
+			<div class="comment-box__comment"> The album was also a commercial success, debuting at number one on the US Billboard 200, selling 658,000 copies in its
+				first week of release. </div>
+		</div>
+		<div class="comment-box">
+			<div class="comment-profile">
+				<img class="comment-profile__image" src="./assets/images/customer-5.jpg" alt="">
+				<div class="comment-profile__name">Bobby B.</div>
+				<div class="comment-profile__info">Last seen yesterday
+					<br> Karma: 3000</div>
+			</div>
+			<div class="comment-box__comment">Nothing Was the Same received generally positive reviews from critics.Nothing Was the Same received generally positive
+				reviews from critics.Nothing Was the Same received generally positive reviews from critics.Nothing Was the Same received
+				generally positive reviews from critics.</div>
+		</div>
 	</div>
 
 	<footer class="footer">
@@ -163,6 +235,7 @@
 	</footer>
 
 	<script src="./assets/js/player.js"></script>
+	<script src="./assets/js/main.js"></script>
 </body>
 
 </html>

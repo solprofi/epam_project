@@ -1,15 +1,26 @@
 .floating-player-col {
     display: flex;
-    position: fixed;
-    top: 30%;
-    left: 6%;
+    position: relative;
+    flex-basis: 40%;
     height: 400px;
-    width: 400px;
+    width: 100%;
     display: inline-block;
-    border-radius: 15px;
-    background: url('../images/player-album-bg.jpeg');
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px #dadada;
+   
+    background: url('../images/contacts-bg.jpeg');
     background-size: cover;
     background-position: center;
+    @mixin atSmall {
+        border-radius: 5px 5px 0 0;
+    }
+    @mixin at2 {
+        flex-basis: 50%;
+    }
+    @mixin at3 {
+        flex-basis: 30%;
+    }
+    
 }
 
 .floating-player-wrapper {
@@ -19,9 +30,7 @@
     top: 68%;
     width: 100%;
     background-color:rgba(238, 238, 238, 0.678);
-    border-radius:  0 0 15px 15px;
     z-index: 2;
-    box-shadow: 2px 2px 2px #dadada;
 }
 
 .player-heading {
@@ -119,3 +128,17 @@
 }
    
 
+.track-box {
+    position: absolute;
+    top: 100%;
+    background: #eee;
+    border: 1px solid rgb(209, 209, 209);
+    width: 100%;
+
+    border-radius: 0 0 5px 5px;
+
+    &__heading {
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

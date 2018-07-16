@@ -3,12 +3,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    height: 105vh;
+    height: 100vh;
 
-
-    @mixin atMedium {
-        height: 90vh;
-    }
 }
 
 

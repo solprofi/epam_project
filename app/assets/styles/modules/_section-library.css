@@ -2,17 +2,21 @@
     position: relative;
     width: 100%;
     box-sizing: border-box;
-    display: flex;
-    justify-content: flex-end;
-    height: 150vh;
+    justify-content: space-evenly;
     z-index: 0;
+
+    @mixin atSmall {
+        display: flex;
+    }
 }
 
 .library {
-    width: calc(100% - 550px);
-    height: 50vh;
-    display: inline-block;
-    
+    flex-basis: 45%;
+
+    @mixin atMedium {
+        flex-basis: 65%;
+    }
+    padding: 20px 0 50px 0;
 }
 
 .library-row {
