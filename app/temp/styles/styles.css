@@ -696,6 +696,10 @@ span {
     transition: all .5s;
 }
 
+i {
+    font-style: normal;
+}
+
 /* FEATURES */
 
 .features-section {
@@ -1047,7 +1051,7 @@ span {
         display: none;
     }
 
-@media (min-width: 960px) {
+@media (min-width: 600px) {
 
 .image-container_mobile-hidden {
             display: initial
@@ -1967,8 +1971,6 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    height: 100vh;
-
 }
 
 .app-screen {
@@ -2337,7 +2339,6 @@ textarea {
     }
 
 .footer-list {
-    display: block;
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     padding: 0;
@@ -2345,9 +2346,9 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .footer-list_small {
@@ -2391,7 +2392,7 @@ textarea {
         color: #888;
         -webkit-transition: color 0.4s;
         transition: color 0.4s;
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: 300;
     }
 
@@ -2674,7 +2675,7 @@ textarea {
     display: block;
     position: relative;
     padding-top: 0px;
-    padding-bottom: 75px;
+    padding-bottom: 20px;
 }
 
 .player-col {
@@ -2814,6 +2815,7 @@ textarea {
 .block-heading {
     font-size: 2rem;
     padding-left: 20px;
+    margin: 10px 0;
 }
 
 .section-library {

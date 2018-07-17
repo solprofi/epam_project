@@ -2,7 +2,7 @@
     display: block;
     position: relative;
     padding-top: 0px;
-    padding-bottom: 75px;
+    padding-bottom: 20px;
 }
 
 .player-col {
@@ -118,5 +118,6 @@
 .block-heading {
     font-size: 2rem;
     padding-left: 20px;
+    margin: 10px 0;
 }
 

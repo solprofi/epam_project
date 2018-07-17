@@ -82,7 +82,7 @@
     &_mobile-hidden {
         display: none;
 
-        @mixin at3 {
+        @mixin at2 {
             display: initial;
         }
     }

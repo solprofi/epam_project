@@ -20,3 +20,7 @@ a {
 span {
     transition: all .5s;
 }
+
+i {
+    font-style: normal;
+}
