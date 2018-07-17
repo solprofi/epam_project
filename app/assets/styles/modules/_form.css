@@ -3,7 +3,11 @@
 }
 
 .contact-form {
-    width: 70%;
+    width: 60%;
+
+    @mixin atMedium {
+        width: 50%;
+    }
     margin: 0 auto;
 }
 
