@@ -1,14 +1,14 @@
 let songs = [
-      './assets/music/01.mp3',
-      './assets/music/02.mp3',
-      './assets/music/03.mp3',
-      './assets/music/04.mp3',
-      './assets/music/05.mp3',
-      './assets/music/06.mp3',
-      './assets/music/07.mp3'
-  ];
+    './assets/music/01.mp3',
+    './assets/music/02.mp3',
+    './assets/music/03.mp3',
+    './assets/music/04.mp3',
+    './assets/music/05.mp3',
+    './assets/music/06.mp3',
+    './assets/music/07.mp3'
+];
 
-  let songTitles = [
+let songTitles = [
     'Feel the Love',
     'Kids See Ghosts',
     '4th Dimension',
@@ -16,7 +16,7 @@ let songs = [
     'Kudi\'s Montage',
     'Devil\'s Watch',
     'Reborn'
-  ]
+]
 
 var songTitle = document.querySelector(".js-song-title");
 var fillBar = document.getElementById("fill");
@@ -33,7 +33,7 @@ window.onload = initialize;   // it will call the function playSong when window 
 function pickSong(i) {
     currentSong = i;
     updateListAppearance(i);
-    playSong();  
+    playSong();
     changeImgToPause();
 }
 
@@ -52,7 +52,7 @@ function updateListAppearance(i) {
 }
 
 
-function playSong(){
+function playSong() {
     song.src = songs[currentSong];  //set the source of 0th song 
     songTitle.textContent = songTitles[currentSong]; // set the title of song
     song.play();
@@ -66,59 +66,85 @@ function changeImgToPlay() {
     document.querySelector('.js-play-btn-img').setAttribute('src', './assets/images/Play.png');
 }
 
-function playOrPauseSong(){
-    
-    if(song.paused){
+function playOrPauseSong() {
+
+    if (song.paused) {
         song.play();
         changeImgToPause();
     }
-    else{
+    else {
         song.pause();
         changeImgToPlay();
     }
 }
 
-song.addEventListener('timeupdate', function(){ 
-    
+song.addEventListener('timeupdate', function () {
+
     var position = song.currentTime / song.duration;
-    
-    fillBar.style.width = position * 100 +'%';
+
+    fillBar.style.width = position * 100 + '%';
 });
 
 document.addEventListener('keyup', function (e) {
     var key = e.which || e.keyCode;
-    
-    if(key === 32) {
+
+    if (key === 32) {
         playOrPauseSong();
     } else if (key === 37) {
         pre();
     } else if (key === 39) {
         next();
     }
-    
+
 });
 
 
 
-function next(){
+function next() {
     currentSong++;
-    if(currentSong > songs.length - 1 ){
+    if (currentSong > songs.length - 1) {
         currentSong = 0;
     }
     playSong();
     changeImgToPause();
     updateListAppearance(currentSong);
-    //$("#image img").attr("src",poster[currentSong]);
 }
 
-function pre(){
-    
+function pre() {
+
     currentSong--;
-    if(currentSong < 0){
+    if (currentSong < 0) {
         currentSong = songs.length - 1;
     }
     playSong();
     changeImgToPause();
     updateListAppearance(currentSong);
-    //$("#image img").attr("src",poster[currentSong]);
 }
+
+let ratings = document.getElementsByClassName('js-rating');
+
+for (let j = 0; j < ratings.length; j++) {
+    ratings[j].addEventListener('click', function (e) {
+        function addStar(i) {
+            children[i].classList.add('star_active');
+        }
+        let children = this.children;
+        let target = e.target;
+        for (let i = 0; i < children.length; i++) {
+            children[i].classList.remove('star_active');
+        }
+        var i = 0;
+        while (i < 5) {
+            (function(i) {
+                setTimeout(function() { addStar(i) }, i * 150);
+            })(i);
+            if (target === children[i]) {
+                break;
+            }
+
+            i++;
+        }
+    }
+    );
+}
+

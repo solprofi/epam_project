@@ -19,8 +19,16 @@
         text-align: center;
         margin-top: 20px;
     }
-     
+
+    &__search {
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+        text-indent: 5px;
+    }
 }
+
+
 
 .footer-nav {
     @mixin atLarge {

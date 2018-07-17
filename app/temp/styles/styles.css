@@ -691,6 +691,11 @@ a {
     color: black;
 }
 
+span {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
 /* FEATURES */
 
 .features-section {
@@ -2280,14 +2285,12 @@ textarea {
 .footer {
     background-color: #333;
     padding: 10px;
-     
 }
 
 @media (min-width: 480px) {
 
 .footer {
         padding: 20px
-     
 }
     }
 
@@ -2295,7 +2298,6 @@ textarea {
 
 .footer {
         padding: 30px
-     
 }
     }
 
@@ -2303,7 +2305,6 @@ textarea {
 
 .footer {
         padding: 40px
-     
 }
     }
 
@@ -2311,6 +2312,13 @@ textarea {
         color: #888;
         text-align: center;
         margin-top: 20px;
+    }
+
+.footer__search {
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+        text-indent: 5px;
     }
 
 .footer-nav {
@@ -2678,25 +2686,33 @@ textarea {
     border-radius: 0;
     background-image: url('../images/player-bg.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-attachment: fixed;
 
 }
 
 .list-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
     padding-left: 20px;
 }
 
-.list-col__heading {
-        font-size: 2rem;
-    }
-
 .track-list {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
     padding-left: 15px;
     margin-left: 5px;
 }
+
+.track-list_rating {
+        list-style: none;
+    }
 
 .track-list__track {
         cursor: pointer;
@@ -2774,6 +2790,15 @@ textarea {
         max-width: 100px;
         max-height: 100px;
     }
+
+.star_active {
+    color: orange;
+}
+
+.block-heading {
+    font-size: 2rem;
+    padding-left: 20px;
+}
 
 .section-library {
     position: relative;
@@ -3097,7 +3122,7 @@ textarea {
 
 .loginbox{
     width: 320px;
-    height: 470px;
+    height: 520px;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 85, 85, 0.95)), to(rgba(85, 85, 85, 0.95)));
     background: linear-gradient(rgba(85, 85, 85, 0.95), rgba(85, 85, 85, 0.95));
     border-radius: 10px;
@@ -3118,6 +3143,15 @@ textarea {
 
 .loginbox_tall {
         height: 600px;
+    }
+
+.loginbox__fb {
+        background-color: #3b5998;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
     }
 
 .loginbox__heading {
@@ -3215,9 +3249,7 @@ textarea {
     margin: 0 auto;
     position: absolute;
     z-index: 2;
-
     -webkit-box-shadow: 2px 2px 2px #dadada;
-
             box-shadow: 2px 2px 2px #dadada;
 }
 
@@ -3263,7 +3295,6 @@ textarea {
 }
 
 .player-controls__btn {
-
         position: absolute;
         top: 50%;
         left: 50%;

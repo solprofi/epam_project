@@ -34,5 +34,4 @@ window.addEventListener('resize', function () {
   if (this.screen.width > 480) {
     navList.classList.remove('main-list_mobile');
   }
-
 });

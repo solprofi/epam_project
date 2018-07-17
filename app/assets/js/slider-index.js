@@ -20,3 +20,8 @@ document.querySelector('.js-prev-2').addEventListener('click', function () {
 document.querySelector('.js-next-2').addEventListener('click', function () {
   slider2.plusSlides(1);
 });
+
+
+document.querySelector('.image-container').addEventListener('click', function () {
+  window.location = 'player.html';
+});
