@@ -111,7 +111,8 @@
 
 }
 
-.star_active {
+.star_active,
+.star:hover {
     color: orange;
 }
 

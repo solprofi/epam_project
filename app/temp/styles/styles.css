@@ -2815,7 +2815,8 @@ textarea {
         max-height: 100px;
     }
 
-.star_active {
+.star_active,
+.star:hover {
     color: orange;
 }
 

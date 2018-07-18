@@ -343,7 +343,6 @@ function next() {
   playSong();
   changeImgToPause();
   updateListAppearance(currentSong);
-  //$('#image img').attr('src',poster[currentSong]);
 }
 
 function pre() {
@@ -355,7 +354,6 @@ function pre() {
   playSong();
   changeImgToPause();
   updateListAppearance(currentSong);
-  //$('#image img').attr('src',poster[currentSong]);
 }
 
 
